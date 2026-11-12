@@ -1,0 +1,11 @@
+{
+  "files_sha256": {
+    "metadata.json": "c5fc2301ff1e5fdecc2a0a15a192e2b477442780a4e761ceef5957b693aa01be",
+    "plot_quality.py": "1b75173c5c7e2abc3c20d66200a3a45078fdc9831ae4ec5d5f96b67752f631f7",
+    "r0_quality.pdf": "8a47ddcbbc6dff6b671495833a9752cb8d120f0c16f381b53515febb85f29c7c",
+    "r0_quality.png": "4fdbcac0fa63d735ccac550b8839a25dd1ce8ad126ec74eb4bd362f37f35bed6",
+    "r0_quality.svg": "bc20483e0e1962935377351fdc13dcefb51f3d7586714cd4e1a29c9aad900841",
+    "README.md": "a61a763fb33e594ad1eb3851ea10bc876af9d7e081f1ef1d3f1279ae306dc085",
+    "source_values.csv": "34ca0cbeb4bbcb94fd984aac6dcabb8e626c98af9b406f3d5914ba8ac196a7dd"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "schema": "jet-generated-only-v1",
+  "reference_sidecar_sha256": "32b2de3afd4574233b170ecb65eeec16fd2256337e8c775681c481c3b8402997",
+  "all_reference_rows_verified": 29421,
+  "reference_dtype": "float32"
+}

@@ -1,0 +1,14 @@
+{
+  "estimator": "profile_generation.py::matmul_flops",
+  "scope": "Analytic leading matrix operations only; 2 FLOPs per MAC; excludes elementwise operations, normalization, softmax, solver arithmetic and data movement.",
+  "model": "JiT-B/16",
+  "channels": 16,
+  "temporal_tokens_per_channel": 5,
+  "patch_samples": 200,
+  "hidden_size": 768,
+  "mlp_width": 3072,
+  "depth": 12,
+  "conditional_nfe_per_generated_sample": 99,
+  "leading_matrix_flops_per_nfe": 15051718656,
+  "leading_matrix_flops_per_generated_sample": 1490120146944
+}

@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/Y-Research-SBU/JET",
+  "commit": "07f9e6491796f4f2c717d6259b1a2e24afce6a77",
+  "license": "MIT; original copyright retained in LICENSE",
+  "unmodified_upstream_files_sha256": {
+    "LICENSE": "1b30ef83fd1ddca4df5a6970d06ef6f397aea4209323902be3e9988162bc08d9",
+    "data/__init__.py": "bd0c37ab872c1df516dc6eb932b8ff19bce131bc2c8b2813a0b9ad9a8c0b68e4",
+    "data/data.py": "89571f015184c21942375f139635f2ba9b46eb1142ca2d98d88c3b60ebd10d2c",
+    "data/metrics.py": "3133f39a68de8b092ce80cdc13e24f10f95a6d987f0bd2666216561a0144a988",
+    "data/preprocess_tuab.py": "22db952c7718792d93fe4ad45f5a34b411c3b8096c78cbb171756a7575f70a5b",
+    "data/preprocess_tuev.py": "d0729cee654beb770b7330f640c21b423f43771a5860cfe3d9fe7b2e01434423",
+    "data/preprocess_tusz.py": "25a6f66f9a878a45c35b6dd9ce76f8b5e96b09d4ea53b59d647b4dda27f0c9a6",
+    "data/tuab_dataset.py": "d836b2d2387fd741d8676e1037d8486d4ce8c8660a859bb8bded8c435981b2d1",
+    "data/tuev_dataset.py": "5cac6461bda7c9126f2fd6737933c030ccba88afb524943f269143b382f30b5f",
+    "data/tusz_dataset.py": "bb7e8a14fb861d0864e4cdb124b3c8e96032309f7d0a6ff2dde5d2e1ae60f3b2",
+    "denoiser.py": "445781d754daaf2df1c7321832701e59aefdfa3641ffbb4d8517545ca87d075e",
+    "engine_eeg.py": "af29fb55b30330bbf9b42381bfbcbf16c8fb12a32e7c4c0ff0f1b26d8ac577f4",
+    "inference.py": "25f5be4c400cb15ea872ad0a248425c230ce3e0fc0471b28efeb747497e3ad50",
+    "models/common.py": "3d50e37db4ada0c80539e68b914b845810cad03ecec39e93bef95694d628c672",
+    "models/raw_vit.py": "d7a9ae6d0dd4ef4a8f6fd3aa7aeea9fd8f90f28a37e18f7e865654acde18879f",
+    "requirements.txt": "043a4016d1802b53c6967a55aae648a863cf2585716373660fd5c86602a626cd",
+    "scripts/infer_tuab.sh": "4c558c99cf5542234d815c2b0533fb957b2f4d7d49c5d391b4f2c3e9534be14e",
+    "scripts/infer_tuev.sh": "b4994b215027518335a3f2d907391c2110cf10a5a907cc2a30438a042ce9790d",
+    "scripts/infer_tusz.sh": "cf6e81c1fd178904d6ca6d607aead45bd509c22a4f91243780034aa915eabcfb",
+    "scripts/train_tuab.sh": "9eccf60585661f4d0187065cb0216d54b1d5dea15f4694097f36cef739cf1100",
+    "scripts/train_tuev.sh": "63fb13d3df4c3f56456484f89f016cfbbb329e8509c18b255cf4c9fc3a3c4aff",
+    "scripts/train_tusz.sh": "cb99ca9ac77dbe780d7c3760081f44f697890a8d6e140c91213aaa3811dd7663",
+    "train_eeg.py": "37c03e258581c257f32046f0ada6397d33edd6697b260c58ade55ac2e6d8d431",
+    "util/lr_sched.py": "47765fbc75affedb8c8c062d8b784fd00a6ee4527c8a82edb8cf514235d7e048",
+    "util/misc.py": "12f0a297c2a328eecf65d7ca8c0f9f2ac59617bd25f1afe6ea1f45e8479490d3",
+    "util/model_util.py": "fdddea94ae9500fee552729a2dc33abab85354c0551c51e9fd6bb155bdbb6ea0"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "checks": {
+    "joint_sequence": {
+      "attention_shapes": [
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ],
+        [
+          2,
+          80,
+          768
+        ]
+      ],
+      "position_shape": [
+        1,
+        80,
+        768
+      ],
+      "position_gradient_l1": 6.210658073425293,
+      "trainable_parameters": 129922760,
+      "blocks": 12,
+      "heads": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "cross_channel_perturbation_max_effect": 0.0620654821395874,
+      "null_conditioned_forward_finite": true
+    },
+    "full_time_losses": {
+      "reconstruction": 2.0,
+      "statistics": 3.4149210453033447,
+      "tv": 0.004000000189989805,
+      "pearson": 1.0,
+      "total": 5.515320777893066
+    },
+    "direct_vector": {
+      "algebra_t": [
+        0.0,
+        0.05000000074505806,
+        0.5,
+        0.9800000190734863,
+        1.0
+      ],
+      "training_t_min_observed": 0.05000000074505806,
+      "constant_vector_solver_nfe": 99,
+      "final_constant_velocity_max_error": 0.0,
+      "ema_update_and_swap_reuse": true,
+      "training_only_class_drop_passed": true
+    },
+    "metric": {
+      "dimension": 1024,
+      "rfft_coefficients": 501,
+      "source_exact": true,
+      "spatial_channel_groups": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          8,
+          9,
+          10,
+          11
+        ],
+        [
+          12,
+          13,
+          14,
+          15
+        ]
+      ],
+      "numeric": {
+        "identity": {
+          "samples_per_collection": 32,
+          "upstream": -0.00024039029333722262,
+          "symmetric": -0.00022317378534353338,
+          "difference": 1.7216507993689234e-05,
+          "absolute_tolerance": 0.0010000024039029333,
+          "passed": true
+        },
+        "perturbed": {
+          "samples_per_collection": 32,
+          "upstream": 232.69656735139446,
+          "symmetric": 232.6966030484241,
+          "difference": 3.569702963091004e-05,
+          "absolute_tolerance": 0.003326965673513945,
+          "passed": true
+        }
+      }
+    },
+    "data_view": {
+      "synthetic_mapping": [
+        {
+          "source_name": "synthetic-a",
+          "view_name": "synthetic-a",
+          "label": [
+            3.0
+          ],
+          "source_dtype": "float64",
+          "view_dtype": "float32",
+          "division_dtype": "float32",
+          "source_raw_sha256": "77ac84a60bad0bb1caaa7784e3f7ff8235db4ae8575f775aefa09640eb9eb6f1",
+          "view_raw_sha256": "5227867d9814cc9032f29a5dd9a3e5e02a843780709dd0338a88ea8f46783ee3",
+          "source_loader_sha256": "83651522851220b95e55f057941f1665a5ada02815680e1363935e5c2d106c22",
+          "view_loader_sha256": "0d131522cc2ce458b9659c7a2c79bc3ce15b7077a745412be68210c68af54d8c",
+          "loader_max_abs_difference": 5.960464477539063e-08,
+          "loader_rms_difference": 1.158903601409161e-08
+        },
+        {
+          "source_name": "synthetic-b",
+          "view_name": "synthetic-b",
+          "label": [
+            3.0
+          ],
+          "source_dtype": "float64",
+          "view_dtype": "float32",
+          "division_dtype": "float32",
+          "source_raw_sha256": "77ac84a60bad0bb1caaa7784e3f7ff8235db4ae8575f775aefa09640eb9eb6f1",
+          "view_raw_sha256": "5227867d9814cc9032f29a5dd9a3e5e02a843780709dd0338a88ea8f46783ee3",
+          "source_loader_sha256": "83651522851220b95e55f057941f1665a5ada02815680e1363935e5c2d106c22",
+          "view_loader_sha256": "0d131522cc2ce458b9659c7a2c79bc3ce15b7077a745412be68210c68af54d8c",
+          "loader_max_abs_difference": 5.960464477539063e-08,
+          "loader_rms_difference": 1.158903601409161e-08
+        }
+      ],
+      "exact_released_loader_match": true,
+      "real_data_view_created": false
+    }
+  },
+  "scope": "Synthetic CPU checks only; no checkpoint/data archive loading or real-signal generation.",
+  "passed": true,
+  "torch_version": "2.6.0+cu124",
+  "numpy_version": "2.4.6",
+  "source_sha256": {
+    "synthetic_checks.py": "71839e77ad23cdf111f6ac1688823a782279bb72c52438227369b061b9f119c9",
+    "model.py": "9423a238d6c8432bca82a944afabb7fe966eedbf4652bcce6c61054117379889",
+    "metric.py": "875024a3a8eda1d70f723dbb0d427ce938cce97e5a7e066289073ce753b8285f",
+    "data_view.py": "876b0dfdf42b633375303670c64abdd629f0df9f941dc9cd1af24260250b373c"
+  }
+}

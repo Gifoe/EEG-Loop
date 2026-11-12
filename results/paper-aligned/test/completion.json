@@ -1,0 +1,26 @@
+{
+  "manifest_sha256": "4d98ade679088bcda8063772fd2210bb601005c0174950baf525fdaa73b1060c",
+  "checkpoint_sha256": "c6b4745ced83fc482b5f78dfe572b841996d39d3e94c1912be61a54af0c35032",
+  "split": "test",
+  "rows": 29421,
+  "generation": {
+    "elapsed_s": 5336.083662763005,
+    "peak_allocated_mib": 2213.40380859375,
+    "peak_reserved_mib": 2476.0
+  },
+  "files_sha256": {
+    "archive-schema.json": "d54085130c3537fae166135e8690dde3ce13d80139b1d29e7f65a3b56917042b",
+    "native-quality.json": "d72b2a09f8c3a5134e72758b93909b70656a3407c9f404bf9f31747067c3ca09",
+    "reference-index.private.npz": "aa99f1ba8fc99fa638f68ae89f181ab2fa730900373edfe70152079d39f89c9e",
+    "eval_batch.npz": "f9bdcf26456405a2b22e35a8914a75c7a22bcd237a486907b74ccb4af8fec98a",
+    "integrity.verified": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration.json": "c3f205bb8b8ba2048e7d266f8fddf68a6e5ec7a5f93e1a549d583dc09edc8b95",
+    "generation-profile.json": "7b974de6b42faa96ce46c317b0ab44f1f2233fa8a0007f30010a6a16a87195bf",
+    "numeric-audit-source1000.json": "f5d720ac463383594be296a4649c5006ce8684cbf37fff4e11510d110d0b248c",
+    "residual-quality.private.json": "bc6eebca03399e86e1549cac1451a832a99d417827f2a217406bb316dfffbcbe",
+    "metrics-source1000.json": "23c6c7bc9d4bc47a0673a4e478d292fcf0e5323c02871fc03674fb0ce267248d",
+    "references.private.json": "32b2de3afd4574233b170ecb65eeec16fd2256337e8c775681c481c3b8402997",
+    "metrics-paper1024.json": "bf01f067f5983816c612f780c7d4fcef7e5303b7117d3de66f9429b848ff8495",
+    "numeric-audit-paper1024.json": "93df2550e50d83a9851fe3c6d1ff2429fdf3ad1d99e44afdceceb2b89737dd85"
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "baseline": {
+    "status": "completed",
+    "k": 1,
+    "steps": 50,
+    "ts_fid": 365.6762855927624,
+    "macro_families": {
+      "psd": 3.502926448760922,
+      "band_power": 2.956565178276635,
+      "morphology": 1.9969877573206143,
+      "temporal": 1.8125353916243094,
+      "spatial": 4.9408185237241335
+    },
+    "class_families": {
+      "0": {
+        "psd": 1.3980530990217015,
+        "band_power": 1.1171312837420107,
+        "morphology": 1.0224440346080022,
+        "temporal": 1.1468599191405824,
+        "spatial": 4.071029922657866
+      },
+      "1": {
+        "psd": 2.3702548213436154,
+        "band_power": 2.2062369215337148,
+        "morphology": 2.294554703586538,
+        "temporal": 3.678670393030289,
+        "spatial": 2.7361144699974465
+      },
+      "2": {
+        "psd": 2.658739019251431,
+        "band_power": 2.513408576985364,
+        "morphology": 2.136594783183133,
+        "temporal": 2.114575529858803,
+        "spatial": 2.173558958038468
+      },
+      "3": {
+        "psd": 2.366201001054497,
+        "band_power": 3.130173353254932,
+        "morphology": 2.9110686539277517,
+        "temporal": 1.8510310061321065,
+        "spatial": 6.30005327228959
+      },
+      "4": {
+        "psd": 6.609726513366106,
+        "band_power": 3.2155902639190783,
+        "morphology": 1.1326587611734393,
+        "temporal": 0.5664458171251645,
+        "spatial": 3.5777594208469328
+      },
+      "5": {
+        "psd": 5.614584238528181,
+        "band_power": 5.55685067022471,
+        "morphology": 2.484605607444822,
+        "temporal": 1.5176296844589114,
+        "spatial": 10.786395098514497
+      }
+    },
+    "archive_sha256": "9f3613740a2b4a4d2913584433b2e095c9029b1c81e992690f5e88e1aac4bf6b",
+    "timing": {
+      "batch_size": 32,
+      "warmup_batches": 2,
+      "measured_batches": 5,
+      "batch_latency_s": [
+        4.269032825002796,
+        4.286331420997158,
+        4.310376109002391,
+        4.328742808997049,
+        4.350345869010198
+      ],
+      "median_batch_latency_s": 4.310376109002391,
+      "peak_allocated_mib": 2126.83740234375,
+      "peak_reserved_mib": 2368.0,
+      "nfe": 99,
+      "block_evaluations_per_sample": 1188,
+      "leading_matrix_flops_per_nfe": 15051718656,
+      "leading_matrix_flops_per_generated_sample": 1490120146944,
+      "flop_convention": "2FLOPs/MAC; includes per-channel conditioning, attention, MLP, embeddings and final projection. Excludes elementwise/norm/softmax/EMA copies/solver.",
+      "timing_scope": "Saved CPU noise transfer+clone and clean generation; no hidden probes or diagnostic suffix decoding",
+      "total_generation_s": 304.39198456499435,
+      "generation_peak_allocated_mib": 2124.83740234375,
+      "generation_peak_reserved_mib": 2378.0
+    }
+  },
+  "loop2": {
+    "status": "completed",
+    "k": 2,
+    "steps": 50,
+    "ts_fid": 367.24184801640706,
+    "macro_families": {
+      "psd": 5.723097374115436,
+      "band_power": 5.812333516818382,
+      "morphology": 9.529187816314163,
+      "temporal": 6.749383711722053,
+      "spatial": 4.843254149692295
+    },
+    "class_families": {
+      "0": {
+        "psd": 4.690689236831547,
+        "band_power": 3.724112480696577,
+        "morphology": 3.8393552793802934,
+        "temporal": 2.7131782050173947,
+        "spatial": 4.015585949454193
+      },
+      "1": {
+        "psd": 2.286393874378683,
+        "band_power": 3.3297124761125723,
+        "morphology": 7.7525000069173355,
+        "temporal": 3.783726170551956,
+        "spatial": 2.547557334364446
+      },
+      "2": {
+        "psd": 2.4087814970446275,
+        "band_power": 3.6390504620593687,
+        "morphology": 8.557492595964169,
+        "temporal": 5.703773292337527,
+        "spatial": 2.077987011716265
+      },
+      "3": {
+        "psd": 4.510085865326574,
+        "band_power": 5.322485067433057,
+        "morphology": 13.57230898691833,
+        "temporal": 11.405875601942308,
+        "spatial": 4.520028300644563
+      },
+      "4": {
+        "psd": 4.434778160779277,
+        "band_power": 5.239197652839769,
+        "morphology": 2.0480701441453872,
+        "temporal": 2.008405702688512,
+        "spatial": 3.7653782830012745
+      },
+      "5": {
+        "psd": 16.0078556103319,
+        "band_power": 13.619442961768945,
+        "morphology": 21.405399884559465,
+        "temporal": 14.881343297794615,
+        "spatial": 12.132988018973027
+      }
+    },
+    "archive_sha256": "dc14e32b49d52edc0f3b0be855ba60d50536f7edcbf52c81dae81a8c25c4ca3f",
+    "timing": {
+      "batch_size": 32,
+      "warmup_batches": 2,
+      "measured_batches": 5,
+      "batch_latency_s": [
+        6.445877877005842,
+        6.538157841991051,
+        6.450141435008845,
+        6.630070793005871,
+        6.504864200003794
+      ],
+      "median_batch_latency_s": 6.504864200003794,
+      "peak_allocated_mib": 2126.83740234375,
+      "peak_reserved_mib": 2368.0,
+      "nfe": 99,
+      "block_evaluations_per_sample": 1584,
+      "leading_matrix_flops_per_nfe": 20039467008,
+      "leading_matrix_flops_per_generated_sample": 1983907233792,
+      "flop_convention": "2FLOPs/MAC; includes per-channel conditioning, attention, MLP, embeddings and final projection. Excludes elementwise/norm/softmax/EMA copies/solver.",
+      "timing_scope": "Saved CPU noise transfer+clone and clean generation; no hidden probes or diagnostic suffix decoding",
+      "total_generation_s": 407.2572480989911,
+      "generation_peak_allocated_mib": 2124.83740234375,
+      "generation_peak_reserved_mib": 2378.0
+    }
+  },
+  "loop3": {
+    "status": "completed",
+    "k": 3,
+    "steps": 50,
+    "ts_fid": 386.4303986793036,
+    "macro_families": {
+      "psd": 10.414674670916463,
+      "band_power": 9.208221176794138,
+      "morphology": 18.510452077443393,
+      "temporal": 11.72522895398658,
+      "spatial": 4.584309763730377
+    },
+    "class_families": {
+      "0": {
+        "psd": 7.288746056578464,
+        "band_power": 5.4647410151547975,
+        "morphology": 6.924476560397205,
+        "temporal": 4.310330508491876,
+        "spatial": 3.9174542250528357
+      },
+      "1": {
+        "psd": 3.674673222526245,
+        "band_power": 4.7524567404925495,
+        "morphology": 12.82871906053914,
+        "temporal": 4.712634638174399,
+        "spatial": 2.3585149836186146
+      },
+      "2": {
+        "psd": 4.521892053668678,
+        "band_power": 5.780634869166347,
+        "morphology": 16.112784135062267,
+        "temporal": 10.642090393734103,
+        "spatial": 1.9735776276008674
+      },
+      "3": {
+        "psd": 7.430135961006398,
+        "band_power": 7.741774091233109,
+        "morphology": 21.710155084046928,
+        "temporal": 16.43462086211343,
+        "spatial": 3.781498351009846
+      },
+      "4": {
+        "psd": 10.252565135149672,
+        "band_power": 8.63751304670088,
+        "morphology": 2.92163924834479,
+        "temporal": 4.807235128915072,
+        "spatial": 3.650241892240076
+      },
+      "5": {
+        "psd": 29.32003559656932,
+        "band_power": 22.872207298017145,
+        "morphology": 50.56493837627004,
+        "temporal": 29.4444621924906,
+        "spatial": 11.824571502860023
+      }
+    },
+    "archive_sha256": "78c7ac1e895e5ba7183f30f87005477a3b86358d3e34acb9234e5daf600f22ba",
+    "timing": {
+      "batch_size": 32,
+      "warmup_batches": 2,
+      "measured_batches": 5,
+      "batch_latency_s": [
+        7.878197359998012,
+        8.222941683008685,
+        8.11514879699098,
+        8.120287533994997,
+        8.10815463999461
+      ],
+      "median_batch_latency_s": 8.11514879699098,
+      "peak_allocated_mib": 2126.83740234375,
+      "peak_reserved_mib": 2368.0,
+      "nfe": 99,
+      "block_evaluations_per_sample": 1980,
+      "leading_matrix_flops_per_nfe": 25027215360,
+      "leading_matrix_flops_per_generated_sample": 2477694320640,
+      "flop_convention": "2FLOPs/MAC; includes per-channel conditioning, attention, MLP, embeddings and final projection. Excludes elementwise/norm/softmax/EMA copies/solver.",
+      "timing_scope": "Saved CPU noise transfer+clone and clean generation; no hidden probes or diagnostic suffix decoding",
+      "total_generation_s": 504.73238460399443,
+      "generation_peak_allocated_mib": 2124.83740234375,
+      "generation_peak_reserved_mib": 2378.0
+    }
+  },
+  "flow67": {
+    "status": "completed",
+    "k": 1,
+    "steps": 67,
+    "ts_fid": 365.2480279759686,
+    "macro_families": {
+      "psd": 3.4667864982110164,
+      "band_power": 2.9392886017471507,
+      "morphology": 1.9925981485006956,
+      "temporal": 1.8120931047196647,
+      "spatial": 4.944435504066116
+    },
+    "class_families": {
+      "0": {
+        "psd": 1.4152958893998329,
+        "band_power": 1.1180233063192813,
+        "morphology": 1.0381011934055766,
+        "temporal": 1.1464285259692562,
+        "spatial": 4.071952177942299
+      },
+      "1": {
+        "psd": 2.3319134780902195,
+        "band_power": 2.187281675285172,
+        "morphology": 2.2818114672248258,
+        "temporal": 3.6790846575235734,
+        "spatial": 2.736987312789225
+      },
+      "2": {
+        "psd": 2.6177436870197703,
+        "band_power": 2.497059913548375,
+        "morphology": 2.1309242829256925,
+        "temporal": 2.1158174532079905,
+        "spatial": 2.174533921422675
+      },
+      "3": {
+        "psd": 2.3463907098916246,
+        "band_power": 3.1143459365835935,
+        "morphology": 2.911694390658348,
+        "temporal": 1.846924946994348,
+        "spatial": 6.308902128734276
+      },
+      "4": {
+        "psd": 6.523427625228503,
+        "band_power": 3.1920075481355434,
+        "morphology": 1.1220872399390684,
+        "temporal": 0.5668575725202539,
+        "spatial": 3.5806196935911245
+      },
+      "5": {
+        "psd": 5.565947599636151,
+        "band_power": 5.527013230610936,
+        "morphology": 2.4709703168506643,
+        "temporal": 1.5174454721025654,
+        "spatial": 10.7936177899171
+      }
+    },
+    "archive_sha256": "62b3a3f7fe75c109e76b203de7814772ee90f8692a1128e13ae952499f55fd6b",
+    "timing": {
+      "batch_size": 32,
+      "warmup_batches": 2,
+      "measured_batches": 5,
+      "batch_latency_s": [
+        6.657972842993331,
+        6.756440073004342,
+        6.757831420007278,
+        6.876798924989998,
+        6.679778264006018
+      ],
+      "median_batch_latency_s": 6.756440073004342,
+      "peak_allocated_mib": 2126.83740234375,
+      "peak_reserved_mib": 2368.0,
+      "nfe": 133,
+      "block_evaluations_per_sample": 1596,
+      "leading_matrix_flops_per_nfe": 15051718656,
+      "leading_matrix_flops_per_generated_sample": 2001878581248,
+      "flop_convention": "2FLOPs/MAC; includes per-channel conditioning, attention, MLP, embeddings and final projection. Excludes elementwise/norm/softmax/EMA copies/solver.",
+      "timing_scope": "Saved CPU noise transfer+clone and clean generation; no hidden probes or diagnostic suffix decoding",
+      "total_generation_s": 422.1878644429962,
+      "generation_peak_allocated_mib": 2124.83740234375,
+      "generation_peak_reserved_mib": 2378.0
+    }
+  },
+  "flow83": {
+    "status": "completed",
+    "k": 1,
+    "steps": 83,
+    "ts_fid": 365.0822349044729,
+    "macro_families": {
+      "psd": 3.456203058549383,
+      "band_power": 2.9341683561125524,
+      "morphology": 1.991403353828904,
+      "temporal": 1.8119921928549376,
+      "spatial": 4.945456789017045
+    },
+    "class_families": {
+      "0": {
+        "psd": 1.4213087759622978,
+        "band_power": 1.1181966437084339,
+        "morphology": 1.043124978890317,
+        "temporal": 1.146327308258072,
+        "spatial": 4.072146828810976
+      },
+      "1": {
+        "psd": 2.320352589587024,
+        "band_power": 2.1814839722022557,
+        "morphology": 2.277538737273958,
+        "temporal": 3.679174662845288,
+        "spatial": 2.737204919862562
+      },
+      "2": {
+        "psd": 2.6054573864222066,
+        "band_power": 2.4922292452366177,
+        "morphology": 2.1295125293476134,
+        "temporal": 2.116214530994897,
+        "spatial": 2.174831939647748
+      },
+      "3": {
+        "psd": 2.3410491071565307,
+        "band_power": 3.109543384082103,
+        "morphology": 2.9119498851350967,
+        "temporal": 1.847335480359517,
+        "spatial": 6.310868529330805
+      },
+      "4": {
+        "psd": 6.496101306387258,
+        "band_power": 3.184476902301764,
+        "morphology": 1.1193829356554987,
+        "temporal": 0.5662048556191751,
+        "spatial": 3.581881155395375
+      },
+      "5": {
+        "psd": 5.552949185780983,
+        "band_power": 5.51907998914414,
+        "morphology": 2.4669110566709422,
+        "temporal": 1.5166963190526772,
+        "spatial": 10.795807361054802
+      }
+    },
+    "archive_sha256": "293952cc0478263c47c0fb2a7b79d411056679f27c103e8cdbbd069589cb2b82",
+    "timing": {
+      "batch_size": 32,
+      "warmup_batches": 2,
+      "measured_batches": 5,
+      "batch_latency_s": [
+        8.323799172008876,
+        8.442927580996184,
+        8.358098739001434,
+        8.3763459079928,
+        8.365209923998918
+      ],
+      "median_batch_latency_s": 8.365209923998918,
+      "peak_allocated_mib": 2126.83740234375,
+      "peak_reserved_mib": 2368.0,
+      "nfe": 165,
+      "block_evaluations_per_sample": 1980,
+      "leading_matrix_flops_per_nfe": 15051718656,
+      "leading_matrix_flops_per_generated_sample": 2483533578240,
+      "flop_convention": "2FLOPs/MAC; includes per-channel conditioning, attention, MLP, embeddings and final projection. Excludes elementwise/norm/softmax/EMA copies/solver.",
+      "timing_scope": "Saved CPU noise transfer+clone and clean generation; no hidden probes or diagnostic suffix decoding",
+      "total_generation_s": 524.3520120870089,
+      "generation_peak_allocated_mib": 2124.83740234375,
+      "generation_peak_reserved_mib": 2378.0
+    }
+  }
+}

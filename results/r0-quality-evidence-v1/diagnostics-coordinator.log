@@ -1,0 +1,46 @@
+	Command being timed: "python -m experiments.looped_jet_tuev_v1.profile_generation /home/luansiyu/EEG-Loop/baseline-seed0/checkpoint-last.pth /home/luansiyu/EEG-Loop/eval-heldout-test-seed0/generation-profile.json"
+	User time (seconds): 94.62
+	System time (seconds): 0.84
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:33.46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2056812
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 130
+	Minor (reclaiming a frame) page faults: 287899
+	Voluntary context switches: 4429
+	Involuntary context switches: 809
+	Swaps: 0
+	File system inputs: 3067136
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "python experiments/looped_jet_tuev_v1/signal_diagnostics.py /home/luansiyu/EEG-Loop/eval-heldout-test-seed0/eval_batch.npz /home/luansiyu/EEG-Loop/eval-heldout-test-seed0/signal-diagnostics.json"
+	User time (seconds): 59.66
+	System time (seconds): 12.68
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:10.38
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4320048
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 5
+	Minor (reclaiming a frame) page faults: 2583744
+	Voluntary context switches: 298
+	Involuntary context switches: 1333
+	Swaps: 0
+	File system inputs: 18544
+	File system outputs: 736
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

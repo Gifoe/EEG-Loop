@@ -1,0 +1,207 @@
+{
+  "upstream_commit": "07f9e6491796f4f2c717d6259b1a2e24afce6a77",
+  "evaluation_python_pid": 109127,
+  "exit_status": 0,
+  "samples": 68445,
+  "metrics": {
+    "num_samples": 68445,
+    "label_histogram": {
+      "0": 526,
+      "1": 10963,
+      "2": 5515,
+      "3": 984,
+      "4": 10553,
+      "5": 39904
+    },
+    "label_names": [
+      "spsw",
+      "gped",
+      "pled",
+      "eyem",
+      "artf",
+      "bckg"
+    ],
+    "ts_fid": {
+      "overall": 287.46273155668246,
+      "per_class": {
+        "0": 173.68023188698768,
+        "1": 265.81519976983776,
+        "2": 280.8498523496012,
+        "3": 249.48040509432923,
+        "4": 423.0608952489155,
+        "5": 329.2735500113955
+      },
+      "feature_bins": 256
+    }
+  },
+  "settings": {
+    "dataset": "tuev",
+    "datasets_dir": "/home/luansiyu/EEG-Loop/tuev-official",
+    "resume": "/home/luansiyu/EEG-Loop/baseline-seed0",
+    "output_dir": "/home/luansiyu/EEG-Loop/eval-released-train-seed0",
+    "eval_split": "train",
+    "model": "JiT-B/16",
+    "num_eeg_channels": 16,
+    "eeg_patch_size": 200,
+    "target_length": 1000,
+    "attn_dropout": 0.0,
+    "proj_dropout": 0.0,
+    "noise_type": "gs",
+    "noise_scale": 1.0,
+    "t_eps": 0.05,
+    "P_mean": -0.8,
+    "P_std": 0.8,
+    "label_drop_prob": 0.1,
+    "ema_decay1": 0.9999,
+    "ema_decay2": 0.9996,
+    "loss_type": "mix",
+    "loss_weight_stft": 0.0,
+    "loss_weight_stat": 1.0,
+    "loss_weight_tv": 0.1,
+    "loss_weight_corr": 0.1,
+    "sampling_method": "heun",
+    "num_sampling_steps": 50,
+    "cfg": 1.0,
+    "interval_min": 0.0,
+    "interval_max": 1.0,
+    "num_images": 0,
+    "gen_bsz": 64,
+    "eval_label_mode": "match_gt",
+    "fid_feature_bins": 256,
+    "seed": 0,
+    "device": "cuda",
+    "eeg_patch_num": 5,
+    "class_num": 6,
+    "weights_used": "model_ema1",
+    "nfe_per_sample": 99,
+    "model_parameter_dtype": "float32",
+    "autocast": false,
+    "feature_dimensions_effective": 1000
+  },
+  "checkpoint": {
+    "epoch": 199,
+    "path": "baseline-seed0/snapshots/checkpoint-epoch-199.pth",
+    "bytes": 2597632689,
+    "finite_tensors_checked": 1089,
+    "sha256": "7047396663de22f02af0ae6676b579cb030be4c9effdd66729b093c22473f418"
+  },
+  "command_wall_hms": "2:57:12",
+  "peak_host_rss_kib": 30779780,
+  "sampled_process_nvml_peak_mib": 2808,
+  "nvml_samples": 2119,
+  "nvml_interval_s": 5,
+  "source_sha256": {
+    "inference.py": "25f5be4c400cb15ea872ad0a248425c230ce3e0fc0471b28efeb747497e3ad50",
+    "denoiser.py": "445781d754daaf2df1c7321832701e59aefdfa3641ffbb4d8517545ca87d075e",
+    "models/raw_vit.py": "d7a9ae6d0dd4ef4a8f6fd3aa7aeea9fd8f90f28a37e18f7e865654acde18879f",
+    "models/common.py": "3d50e37db4ada0c80539e68b914b845810cad03ecec39e93bef95694d628c672",
+    "data/metrics.py": "3133f39a68de8b092ce80cdc13e24f10f95a6d987f0bd2666216561a0144a988",
+    "data/data.py": "89571f015184c21942375f139635f2ba9b46eb1142ca2d98d88c3b60ebd10d2c",
+    "data/tuev_dataset.py": "5cac6461bda7c9126f2fd6737933c030ccba88afb524943f269143b382f30b5f",
+    "scripts/infer_tuev.sh": "b4994b215027518335a3f2d907391c2110cf10a5a907cc2a30438a042ce9790d",
+    "experiments/looped_jet_tuev_v1/run_r0_evaluation.sh": "8cfcd6be5efd51a19fec28165bcf69e34a05fab2d0a286ea029b7497c23d8d17",
+    "experiments/looped_jet_tuev_v1/reference_index.py": "86a72efd694f8ce965cbca81431a271a966ce58dedd6efbb3b4aa575012a0282",
+    "experiments/looped_jet_tuev_v1/audit_ts_fid.py": "b926061429660028b72a2973d82b5999fd9dc6a657fa02fb36d3f42093b80ff6"
+  },
+  "artifacts": {
+    "eval_batch.npz": {
+      "bytes": 8153056958,
+      "sha256": "a1381b1557c4adb62b75efbafc67e874fb8e496a42dc7eace6bf08e851f96387"
+    },
+    "metrics.json": {
+      "bytes": 525,
+      "sha256": "3b138d0bc3b689cf900a43a027c98b9f9d0bba3e023a62147d2c1c8d53b3a015"
+    },
+    "evaluation.log": {
+      "bytes": 26851,
+      "sha256": "47dea075af68280739752743a98f8e032ade2e1f37f2640265fcdb9492095ffe"
+    },
+    "reference-index.npz": {
+      "bytes": 3976932,
+      "sha256": "15965df6f48e05c80a3792b31ef1c8da27b6949b62a008f45614bbe741845125"
+    },
+    "processed-manifest.json": {
+      "bytes": 3847,
+      "sha256": "1d4aea921b17c8a872811bb10cbccf1cc74900f2fcbbd27ccc3532869a23c98d"
+    },
+    "environment.freeze.txt": {
+      "bytes": 2594,
+      "sha256": "8699a9641d5605471cb8d9ddcfaf1191caf49d96fc2ea9553400f1ad58db5162"
+    },
+    "integrity.log": {
+      "bytes": 108,
+      "sha256": "8b07d536e23f68df1e59433ca04294dde336cc4b9fdc102f01d4edc2c7b62786"
+    },
+    "ts-fid-independent-audit.json": {
+      "bytes": 1815,
+      "sha256": "ebdf652c854bfee6b52314dc1cee61acb711f90185d8f6f6800d8fc3226e9a03"
+    },
+    "checkpoint-independent-audit.json": {
+      "bytes": 640,
+      "sha256": "27b33366004b24002f4818050ae85e6c7c791ac0682690434cd0b9e4a5b13f92"
+    }
+  },
+  "independent_numeric_audit": {
+    "effective_feature_dimensions": 1000,
+    "checks": {
+      "overall": {
+        "samples_per_collection": 68445,
+        "upstream": 287.46273155668246,
+        "symmetric": 287.46273162829345,
+        "difference": 7.161099802033277e-08,
+        "absolute_tolerance": 0.0038746273155668247,
+        "passed": true
+      },
+      "0": {
+        "samples_per_collection": 526,
+        "upstream": 173.68023188698768,
+        "symmetric": 173.68024815433364,
+        "difference": 1.6267345955611745e-05,
+        "absolute_tolerance": 0.002736802318869877,
+        "passed": true
+      },
+      "1": {
+        "samples_per_collection": 10963,
+        "upstream": 265.81519976983776,
+        "symmetric": 265.8151997698383,
+        "difference": 5.115907697472721e-13,
+        "absolute_tolerance": 0.003658151997698378,
+        "passed": true
+      },
+      "2": {
+        "samples_per_collection": 5515,
+        "upstream": 280.8498523496012,
+        "symmetric": 280.8498523482948,
+        "difference": -1.3063754522590898e-09,
+        "absolute_tolerance": 0.003808498523496012,
+        "passed": true
+      },
+      "3": {
+        "samples_per_collection": 984,
+        "upstream": 249.48040509432923,
+        "symmetric": 249.4804144571125,
+        "difference": 9.362783259803109e-06,
+        "absolute_tolerance": 0.0034948040509432923,
+        "passed": true
+      },
+      "4": {
+        "samples_per_collection": 10553,
+        "upstream": 423.0608952489155,
+        "symmetric": 423.06089524891826,
+        "difference": 2.7853275241795927e-12,
+        "absolute_tolerance": 0.005230608952489155,
+        "passed": true
+      },
+      "5": {
+        "samples_per_collection": 39904,
+        "upstream": 329.2735500113955,
+        "symmetric": 329.2735500164632,
+        "difference": 5.067704478278756e-09,
+        "absolute_tolerance": 0.004292735500113955,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "limits": "Command elapsed includes generation, archive compression and metrics; not isolated sampling latency. NVML process peak sampled every5seconds. Paper comparability requires separate protocol adjudication."
+}

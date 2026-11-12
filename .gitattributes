@@ -1,0 +1,4 @@
+# Preserve frozen source/evidence bytes across operating systems.
+* -text
+*.png binary
+*.pdf binary

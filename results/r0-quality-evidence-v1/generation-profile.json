@@ -1,0 +1,22 @@
+{
+  "warmup_batches": 2,
+  "measured_batches": 5,
+  "batch_size": 64,
+  "cuda_device": "NVIDIA RTX A6000",
+  "dtype": "torch.float32",
+  "tf32_matmul_enabled": false,
+  "batch_latency_s": [
+    12.553344277999713,
+    13.124851232001674,
+    13.16252120900026,
+    13.098833718002425,
+    13.10206891701091
+  ],
+  "median_batch_latency_s": 13.10206891701091,
+  "peak_allocated_vram_mib": 2240.33740234375,
+  "peak_reserved_vram_mib": 2494.0,
+  "nfe": 99,
+  "matmul_flops_per_sample_per_nfe": 15051718656,
+  "matmul_flops_per_generated_sample": 1490120146944,
+  "flop_convention": "two FLOPs per MAC; excludes elementwise, softmax, norms and solver arithmetic"
+}

@@ -1,0 +1,10 @@
+{
+  "approved_config_sha256": "df72fb356fb197d4e59fd25a37bb8406e5b95a74a0eb575aa20b1ad216689bd3",
+  "torch": "2.6.0+cu124",
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": false,
+  "gpu": "NVIDIA RTX A6000, 560.35.03, 48211 MiB, 0 %\n",
+  "shared_gpu_processes": ""
+}

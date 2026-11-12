@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "python": "3.10.19 (main, Jun 17 2026, 19:53:31) [GCC 14.3.0]",
+  "versions": {
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "mne": "1.10.2",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.8",
+    "tensorboard": "2.21.0",
+    "tqdm": "4.70.1",
+    "einops": "0.8.2"
+  },
+  "module_paths": {
+    "torch": "/home/luansiyu/EEG-Loop/conda-paper-aligned-v1/lib/python3.10/site-packages/torch/__init__.py",
+    "numpy": "/home/luansiyu/EEG-Loop/conda-paper-aligned-v1/lib/python3.10/site-packages/numpy/__init__.py",
+    "scipy": "/home/luansiyu/EEG-Loop/conda-paper-aligned-v1/lib/python3.10/site-packages/scipy/__init__.py",
+    "mne": "/home/luansiyu/EEG-Loop/conda-paper-aligned-v1/lib/python3.10/site-packages/mne/__init__.py",
+    "scikit-learn": "/home/luansiyu/EEG-Loop/conda-paper-aligned-v1/lib/python3.10/site-packages/sklearn/__init__.py",
+    "matplotlib": "/home/luansiyu/EEG-Loop/conda-paper-aligned-v1/lib/python3.10/site-packages/matplotlib/__init__.py",
+    "tensorboard": "/home/luansiyu/EEG-Loop/conda-paper-aligned-v1/lib/python3.10/site-packages/tensorboard/__init__.py",
+    "tqdm": "/home/luansiyu/EEG-Loop/conda-paper-aligned-v1/lib/python3.10/site-packages/tqdm/__init__.py",
+    "einops": "/home/luansiyu/EEG-Loop/conda-paper-aligned-v1/lib/python3.10/site-packages/einops/__init__.py"
+  },
+  "user_site_enabled": false
+}

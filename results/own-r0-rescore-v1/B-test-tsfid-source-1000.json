@@ -1,0 +1,85 @@
+{
+  "metric_id": "tsfid-source-1000",
+  "dimensions": 1000,
+  "checks": {
+    "overall": {
+      "rows_per_collection": 29421,
+      "score": 365.1448073063774,
+      "symmetric_audit": 365.1448073311332,
+      "difference": 2.4755820504651638e-08,
+      "absolute_tolerance": 0.0046514480730637745,
+      "passed": true,
+      "old_environment_score": 365.1448073252671,
+      "runtime_delta": -1.8889693365053972e-08,
+      "runtime_within_frozen_tolerance": true
+    },
+    "0": {
+      "rows_per_collection": 567,
+      "score": 329.94236036846945,
+      "symmetric_audit": 329.94238831954755,
+      "difference": 2.7951078095611592e-05,
+      "absolute_tolerance": 0.004299423603684694,
+      "passed": true,
+      "old_environment_score": 329.9423618579432,
+      "runtime_delta": -1.4894737319082196e-06,
+      "runtime_within_frozen_tolerance": true
+    },
+    "1": {
+      "rows_per_collection": 4677,
+      "score": 540.7131130213049,
+      "symmetric_audit": 540.7131139941403,
+      "difference": 9.728353234095266e-07,
+      "absolute_tolerance": 0.0064071311302130495,
+      "passed": true,
+      "old_environment_score": 540.7131129907692,
+      "runtime_delta": 3.053571617783746e-08,
+      "runtime_within_frozen_tolerance": true
+    },
+    "2": {
+      "rows_per_collection": 1998,
+      "score": 240.8920578044007,
+      "symmetric_audit": 240.8920592920311,
+      "difference": 1.487630385099692e-06,
+      "absolute_tolerance": 0.0034089205780440074,
+      "passed": true,
+      "old_environment_score": 240.89205777257826,
+      "runtime_delta": 3.182245222888014e-08,
+      "runtime_within_frozen_tolerance": true
+    },
+    "3": {
+      "rows_per_collection": 329,
+      "score": 277.0734452441585,
+      "symmetric_audit": 277.0734585950054,
+      "difference": 1.3350846870707755e-05,
+      "absolute_tolerance": 0.0037707344524415855,
+      "passed": true,
+      "old_environment_score": 277.07344546466925,
+      "runtime_delta": -2.2051074211049126e-07,
+      "runtime_within_frozen_tolerance": true
+    },
+    "4": {
+      "rows_per_collection": 2204,
+      "score": 835.5474692144842,
+      "symmetric_audit": 835.5474942611484,
+      "difference": 2.5046664177352795e-05,
+      "absolute_tolerance": 0.009355474692144844,
+      "passed": true,
+      "old_environment_score": 835.5474692996875,
+      "runtime_delta": -8.520328265149146e-08,
+      "runtime_within_frozen_tolerance": true
+    },
+    "5": {
+      "rows_per_collection": 19646,
+      "score": 365.8366724350584,
+      "symmetric_audit": 365.83667243505863,
+      "difference": 2.2737367544323206e-13,
+      "absolute_tolerance": 0.0046583667243505844,
+      "passed": true,
+      "old_environment_score": 365.83667240279647,
+      "runtime_delta": 3.2261937121802475e-08,
+      "runtime_within_frozen_tolerance": true
+    }
+  },
+  "passed": true,
+  "independent_covariance": "Centered Chan accumulation versus raw sums; symmetric eigensquare root versus source sqrtm"
+}

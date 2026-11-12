@@ -1,0 +1,24 @@
+{
+  "current_free_bytes": 28345470976,
+  "sample_count": 48,
+  "sample_allocated_min": 65536,
+  "sample_allocated_max": 65536,
+  "view_upper_bytes": 7597276252,
+  "materialization_required": 12965985372,
+  "training_additional_required": 15968709120,
+  "training_projected_free_after_view": 20748194724,
+  "evaluation_projected_free_after_view_and_three_checkpoints": 12798194724,
+  "evaluation_additional_required": 11777401600,
+  "generated_upper_bytes": 6408692480,
+  "safety_bytes": 5368709120,
+  "all_projected_phases_fit": true,
+  "source_sha256": {
+    "reference_sidecar.py": "cdd7ebb3966dad6b6cffe1305089bc9573e3dcaf7cf34caab03ef3564f856d81",
+    "storage_budget.py": "88505fb75b9acad4b3b0f254842ef57b03402f2e27ed36a08cbad81348a0bac3",
+    "freeze_materializer.py": "b095cd06119f3e1a380712116d3853982544f6025cf6fd4bcae69c6ffb306ea6",
+    "freeze_inputs.py": "bf02abff10204944e6555daa70164f0e63def158fea290d4fd8706b275c456ba",
+    "train_aligned.py": "d49714b9aebf01529e10656cde8ae187b41b1bfde145beedfb373f684bd4aa7b",
+    "evaluate_aligned.py": "0f57ecf48a5d80bf0ea3a597f06dc49110c6d54a8be9e4dc86e8e66b57996d05",
+    "test_storage_amendment.py": "3c13374b27603a7a93c4a85d7cf93076016a4dd59cf6860cb3f9babcea423aef"
+  }
+}

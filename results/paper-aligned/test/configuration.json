@@ -1,0 +1,22 @@
+{
+  "manifest_sha256": "4d98ade679088bcda8063772fd2210bb601005c0174950baf525fdaa73b1060c",
+  "checkpoint_sha256": "c6b4745ced83fc482b5f78dfe572b841996d39d3e94c1912be61a54af0c35032",
+  "split": "test",
+  "seed": 0,
+  "batch": 64,
+  "ema": "ema1",
+  "solver": "heun",
+  "steps": 50,
+  "final_euler": true,
+  "nfe": 99,
+  "cfg": 1,
+  "noise": "unit Gaussian",
+  "reference_index_sha256": "aa99f1ba8fc99fa638f68ae89f181ab2fa730900373edfe70152079d39f89c9e",
+  "backend": {
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "cudnn_benchmark": true,
+    "cudnn_deterministic": false
+  },
+  "primary": true
+}

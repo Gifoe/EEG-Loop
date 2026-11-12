@@ -1,0 +1,12 @@
+{
+  "upstream_commit": "07f9e6491796f4f2c717d6259b1a2e24afce6a77",
+  "training_seed": 0,
+  "training_log_sha256": "0d8835fa63fb4e847abf9e7601ff19d4cfdefe5f1d5aa223401f9e737fa36a37",
+  "training_timer_hms": "9:48:38",
+  "command_wall_hms": "9:48:43",
+  "peak_logged_torch_allocated_mib": 13477,
+  "epochs": 200,
+  "device_context": "Shared NVIDIA RTX A6000",
+  "duration_definition": "Original Total time per epoch rounded to integer seconds. Checkpoint writes and setup excluded.",
+  "objective_definition": "Original logged raw epoch-mean mixed training objective rounded to four decimals."
+}

@@ -1,0 +1,83 @@
+{
+  "splits": {
+    "train": {
+      "rows": 68445,
+      "class_counts": {
+        "5": 39904,
+        "4": 10553,
+        "3": 984,
+        "0": 526,
+        "2": 5515,
+        "1": 10963
+      },
+      "raw_max_abs_change_uv": 0.000958567216002848,
+      "raw_rms_change_uv": 5.6157001131540534e-06,
+      "loader_max_abs_change": 1.52587890625e-05,
+      "loader_rms_change": 9.390355999038531e-08,
+      "storage_raw_hash_changed_rows": 68445,
+      "storage_numeric_changed_rows": 68445,
+      "loader_hash_changed_rows": 68445,
+      "one_to_one_mapping": true
+    },
+    "val": {
+      "rows": 15487,
+      "class_counts": {
+        "4": 500,
+        "3": 86,
+        "5": 13822,
+        "0": 119,
+        "2": 669,
+        "1": 291
+      },
+      "raw_max_abs_change_uv": 0.00016829912783578038,
+      "raw_rms_change_uv": 7.408846123731515e-07,
+      "loader_max_abs_change": 3.814697265625e-06,
+      "loader_rms_change": 1.266602571886841e-08,
+      "storage_raw_hash_changed_rows": 15487,
+      "storage_numeric_changed_rows": 15487,
+      "loader_hash_changed_rows": 15487,
+      "one_to_one_mapping": true
+    },
+    "test": {
+      "rows": 29421,
+      "class_counts": {
+        "5": 19646,
+        "4": 2204,
+        "3": 329,
+        "2": 1998,
+        "1": 4677,
+        "0": 567
+      },
+      "raw_max_abs_change_uv": 0.0002441337537675281,
+      "raw_rms_change_uv": 1.6133757582179177e-06,
+      "loader_max_abs_change": 7.62939453125e-06,
+      "loader_rms_change": 2.748308729270412e-08,
+      "storage_raw_hash_changed_rows": 29421,
+      "storage_numeric_changed_rows": 29421,
+      "loader_hash_changed_rows": 29421,
+      "one_to_one_mapping": true
+    }
+  },
+  "source_index_sha256": {
+    "train": "15965df6f48e05c80a3792b31ef1c8da27b6949b62a008f45614bbe741845125",
+    "val": "a1c100f89a1712749974609ba0fe2dc1b0a1553ec15e3dbbac5ec4b28e353b0e",
+    "test": "8fc319346fcfc97b6964aef6e7ee2490961a16842c67ee73baedf0a28607b884"
+  },
+  "component_mapping_sha256": {
+    "trainval": "ade2110650e655ec1b4e6417a2eec0db35131bd9485c320bf97043436b1500da",
+    "test": "3c163e22183211050d271e1f09ba92e1040dfd9c4187011a9f29f133bbf7960e"
+  },
+  "source": "/home/luansiyu/EEG-Loop/tuev-official",
+  "view": "/home/luansiyu/EEG-Loop/tuev-paper-aligned-v1-f32",
+  "normalization": "Unchanged source NumPy float32 /100.0 then Torch.float32",
+  "materializer_freeze_sha256": "d1e7dc1805182ea0ce08551a95e277c70795c822297f956e3f92a67a9ee250cc",
+  "source_code_sha256": "ec3a9db5feb62e16fb415cfec8973a062bbc7aa01a4b663a23e2a5fec949e987",
+  "real_data_view": true,
+  "cross_split_view_loader_hash_overlaps": {
+    "train/val": 0,
+    "train/test": 0,
+    "val/test": 0
+  },
+  "mapping_ledger_sha256": "22e33001c29a4842f8806a51a36581e37fe55fff6f735115de41ffcb8907db6a",
+  "mapping_ledger": "mapping-7452e000447346d0a89b91e59ba6c5ce.private.jsonl"
+}

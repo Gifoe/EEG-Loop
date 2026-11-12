@@ -1,0 +1,240 @@
+{
+  "actual_invocation": [
+    "python",
+    "inference.py",
+    "--dataset",
+    "tuev",
+    "--datasets_dir",
+    "/home/luansiyu/EEG-Loop/tuev-official",
+    "--resume",
+    "/home/luansiyu/EEG-Loop/baseline-seed0",
+    "--output_dir",
+    "/home/luansiyu/EEG-Loop/eval-heldout-test-seed0",
+    "--num_images",
+    "0",
+    "--gen_bsz",
+    "64",
+    "--eval_split",
+    "test",
+    "--eval_label_mode",
+    "match_gt",
+    "--seed",
+    "0"
+  ],
+  "result_paths": {
+    "eval_batch.npz": "/home/luansiyu/EEG-Loop/eval-heldout-test-seed0/eval_batch.npz",
+    "metrics.json": "/home/luansiyu/EEG-Loop/eval-heldout-test-seed0/metrics.json",
+    "evaluation.log": "/home/luansiyu/EEG-Loop/evidence/eval-heldout-test-seed0.log",
+    "reference-index.npz": "/home/luansiyu/EEG-Loop/evidence/reference-index/test-seed0.npz",
+    "processed-manifest.json": "/home/luansiyu/EEG-Loop/evidence/processed-manifest.json",
+    "environment.freeze.txt": "/home/luansiyu/EEG-Loop/evidence/conda-r0.freeze.txt",
+    "integrity.log": "/home/luansiyu/EEG-Loop/evidence/evaluation-integrity/test-seed0.log",
+    "ts-fid-independent-audit.json": "/home/luansiyu/EEG-Loop/evidence/evaluation-integrity/test-seed0.ts-fid-audit.json",
+    "checkpoint-independent-audit.json": "/home/luansiyu/EEG-Loop/evidence/final-checkpoints.audit.json"
+  },
+  "upstream_commit": "07f9e6491796f4f2c717d6259b1a2e24afce6a77",
+  "evaluation_python_pid": 131147,
+  "exit_status": 0,
+  "samples": 29421,
+  "metrics": {
+    "num_samples": 29421,
+    "label_histogram": {
+      "0": 567,
+      "1": 4677,
+      "2": 1998,
+      "3": 329,
+      "4": 2204,
+      "5": 19646
+    },
+    "label_names": [
+      "spsw",
+      "gped",
+      "pled",
+      "eyem",
+      "artf",
+      "bckg"
+    ],
+    "ts_fid": {
+      "overall": 365.1448073252671,
+      "per_class": {
+        "0": 329.9423618579432,
+        "1": 540.7131129907692,
+        "2": 240.89205777257826,
+        "3": 277.07344546466925,
+        "4": 835.5474692996875,
+        "5": 365.83667240279647
+      },
+      "feature_bins": 256
+    }
+  },
+  "settings": {
+    "dataset": "tuev",
+    "datasets_dir": "/home/luansiyu/EEG-Loop/tuev-official",
+    "resume": "/home/luansiyu/EEG-Loop/baseline-seed0",
+    "output_dir": "/home/luansiyu/EEG-Loop/eval-heldout-test-seed0",
+    "eval_split": "test",
+    "model": "JiT-B/16",
+    "num_eeg_channels": 16,
+    "eeg_patch_size": 200,
+    "target_length": 1000,
+    "attn_dropout": 0.0,
+    "proj_dropout": 0.0,
+    "noise_type": "gs",
+    "noise_scale": 1.0,
+    "t_eps": 0.05,
+    "P_mean": -0.8,
+    "P_std": 0.8,
+    "label_drop_prob": 0.1,
+    "ema_decay1": 0.9999,
+    "ema_decay2": 0.9996,
+    "loss_type": "mix",
+    "loss_weight_stft": 0.0,
+    "loss_weight_stat": 1.0,
+    "loss_weight_tv": 0.1,
+    "loss_weight_corr": 0.1,
+    "sampling_method": "heun",
+    "num_sampling_steps": 50,
+    "cfg": 1.0,
+    "interval_min": 0.0,
+    "interval_max": 1.0,
+    "num_images": 0,
+    "gen_bsz": 64,
+    "eval_label_mode": "match_gt",
+    "fid_feature_bins": 256,
+    "seed": 0,
+    "device": "cuda",
+    "eeg_patch_num": 5,
+    "class_num": 6,
+    "weights_used": "model_ema1",
+    "nfe_per_sample": 99,
+    "model_parameter_dtype": "float32",
+    "autocast": false,
+    "feature_dimensions_effective": 1000
+  },
+  "checkpoint": {
+    "epoch": 199,
+    "path": "baseline-seed0/snapshots/checkpoint-epoch-199.pth",
+    "bytes": 2597632689,
+    "finite_tensors_checked": 1089,
+    "sha256": "7047396663de22f02af0ae6676b579cb030be4c9effdd66729b093c22473f418"
+  },
+  "command_wall_hms": "1:47:21",
+  "peak_host_rss_kib": 15481248,
+  "sampled_process_nvml_peak_mib": 2808,
+  "nvml_samples": 1283,
+  "nvml_interval_s": 5,
+  "source_sha256": {
+    "inference.py": "25f5be4c400cb15ea872ad0a248425c230ce3e0fc0471b28efeb747497e3ad50",
+    "denoiser.py": "445781d754daaf2df1c7321832701e59aefdfa3641ffbb4d8517545ca87d075e",
+    "models/raw_vit.py": "d7a9ae6d0dd4ef4a8f6fd3aa7aeea9fd8f90f28a37e18f7e865654acde18879f",
+    "models/common.py": "3d50e37db4ada0c80539e68b914b845810cad03ecec39e93bef95694d628c672",
+    "data/metrics.py": "3133f39a68de8b092ce80cdc13e24f10f95a6d987f0bd2666216561a0144a988",
+    "data/data.py": "89571f015184c21942375f139635f2ba9b46eb1142ca2d98d88c3b60ebd10d2c",
+    "data/tuev_dataset.py": "5cac6461bda7c9126f2fd6737933c030ccba88afb524943f269143b382f30b5f",
+    "scripts/infer_tuev.sh": "b4994b215027518335a3f2d907391c2110cf10a5a907cc2a30438a042ce9790d",
+    "experiments/looped_jet_tuev_v1/run_r0_evaluation.sh": "8cfcd6be5efd51a19fec28165bcf69e34a05fab2d0a286ea029b7497c23d8d17",
+    "experiments/looped_jet_tuev_v1/reference_index.py": "86a72efd694f8ce965cbca81431a271a966ce58dedd6efbb3b4aa575012a0282",
+    "experiments/looped_jet_tuev_v1/audit_ts_fid.py": "b926061429660028b72a2973d82b5999fd9dc6a657fa02fb36d3f42093b80ff6"
+  },
+  "artifacts": {
+    "eval_batch.npz": {
+      "bytes": 3504274444,
+      "sha256": "9870912868b6fbcd812bcb43684a9fb4d6a6e0556cae2124a34fa48bc7bbf73c"
+    },
+    "metrics.json": {
+      "bytes": 522,
+      "sha256": "25d401bb8b0d233a54b6f29f65d47663c2ff36c07e4872e8aad6aa0031d80745"
+    },
+    "evaluation.log": {
+      "bytes": 12332,
+      "sha256": "e58673946751e9a9f192f8d71bd518ca73bbf4c5372a6a3d2a3f1386c761ae47"
+    },
+    "reference-index.npz": {
+      "bytes": 1592084,
+      "sha256": "8fc319346fcfc97b6964aef6e7ee2490961a16842c67ee73baedf0a28607b884"
+    },
+    "processed-manifest.json": {
+      "bytes": 3847,
+      "sha256": "1d4aea921b17c8a872811bb10cbccf1cc74900f2fcbbd27ccc3532869a23c98d"
+    },
+    "environment.freeze.txt": {
+      "bytes": 2594,
+      "sha256": "8699a9641d5605471cb8d9ddcfaf1191caf49d96fc2ea9553400f1ad58db5162"
+    },
+    "integrity.log": {
+      "bytes": 108,
+      "sha256": "f12e4c59e219851846abe1504aea24321c5b63855c5f81453f700c5df9dbf1cd"
+    },
+    "ts-fid-independent-audit.json": {
+      "bytes": 1809,
+      "sha256": "01f1bd8acd57dca1bf96d8b7d0de84c9cd07e3a0707d9bdb450be50fbf0356b4"
+    },
+    "checkpoint-independent-audit.json": {
+      "bytes": 640,
+      "sha256": "27b33366004b24002f4818050ae85e6c7c791ac0682690434cd0b9e4a5b13f92"
+    }
+  },
+  "independent_numeric_audit": {
+    "effective_feature_dimensions": 1000,
+    "checks": {
+      "overall": {
+        "samples_per_collection": 29421,
+        "upstream": 365.1448073252671,
+        "symmetric": 365.1448073854919,
+        "difference": 6.022480647516204e-08,
+        "absolute_tolerance": 0.004651448073252671,
+        "passed": true
+      },
+      "0": {
+        "samples_per_collection": 567,
+        "upstream": 329.9423618579432,
+        "symmetric": 329.9423893611147,
+        "difference": 2.7503171509124513e-05,
+        "absolute_tolerance": 0.004299423618579433,
+        "passed": true
+      },
+      "1": {
+        "samples_per_collection": 4677,
+        "upstream": 540.7131129907692,
+        "symmetric": 540.713114175814,
+        "difference": 1.1850447663164232e-06,
+        "absolute_tolerance": 0.006407131129907693,
+        "passed": true
+      },
+      "2": {
+        "samples_per_collection": 1998,
+        "upstream": 240.89205777257826,
+        "symmetric": 240.892059467909,
+        "difference": 1.6953307522271643e-06,
+        "absolute_tolerance": 0.0034089205777257828,
+        "passed": true
+      },
+      "3": {
+        "samples_per_collection": 329,
+        "upstream": 277.07344546466925,
+        "symmetric": 277.0734589425081,
+        "difference": 1.3477838876951864e-05,
+        "absolute_tolerance": 0.0037707344546466927,
+        "passed": true
+      },
+      "4": {
+        "samples_per_collection": 2204,
+        "upstream": 835.5474692996875,
+        "symmetric": 835.547494999603,
+        "difference": 2.5699915568111464e-05,
+        "absolute_tolerance": 0.009355474692996874,
+        "passed": true
+      },
+      "5": {
+        "samples_per_collection": 19646,
+        "upstream": 365.83667240279647,
+        "symmetric": 365.83667243505977,
+        "difference": 3.2263301363855135e-08,
+        "absolute_tolerance": 0.004658366724027965,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "limits": "Command elapsed includes generation, archive compression and metrics; not isolated sampling latency. NVML process peak sampled every5seconds. Paper comparability requires separate protocol adjudication."
+}

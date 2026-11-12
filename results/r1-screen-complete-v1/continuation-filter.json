@@ -1,0 +1,116 @@
+{
+  "loops": {
+    "loop2": {
+      "passes": false,
+      "fid_strictly_below_both": false,
+      "macro_filters": {
+        "psd": false,
+        "band_power": false,
+        "morphology": false,
+        "temporal": false,
+        "spatial": true
+      },
+      "class_filters": {
+        "0": {
+          "psd": false,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        },
+        "1": {
+          "psd": true,
+          "band_power": false,
+          "morphology": false,
+          "temporal": true,
+          "spatial": true
+        },
+        "2": {
+          "psd": true,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        },
+        "3": {
+          "psd": false,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        },
+        "4": {
+          "psd": true,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        },
+        "5": {
+          "psd": false,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        }
+      }
+    },
+    "loop3": {
+      "passes": false,
+      "fid_strictly_below_both": false,
+      "macro_filters": {
+        "psd": false,
+        "band_power": false,
+        "morphology": false,
+        "temporal": false,
+        "spatial": true
+      },
+      "class_filters": {
+        "0": {
+          "psd": false,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        },
+        "1": {
+          "psd": false,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        },
+        "2": {
+          "psd": false,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        },
+        "3": {
+          "psd": false,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        },
+        "4": {
+          "psd": false,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        },
+        "5": {
+          "psd": false,
+          "band_power": false,
+          "morphology": false,
+          "temporal": false,
+          "spatial": true
+        }
+      }
+    }
+  },
+  "provisional_selected_arm": null,
+  "further_runs_authorized": false
+}

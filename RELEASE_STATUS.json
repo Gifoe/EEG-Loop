@@ -1,0 +1,21 @@
+{
+  "upstream_repository": "https://github.com/Y-Research-SBU/JET",
+  "upstream_commit": "07f9e6491796f4f2c717d6259b1a2e24afce6a77",
+  "snapshot_date": "2026-11-12",
+  "timezone": "Asia/Shanghai",
+  "experiment_state": "paused; owned GPU processes terminated",
+  "summary_rows": 11,
+  "published_tuev_tsfid": 235.86,
+  "published_value_reproduced": false,
+  "full_training_epochs_each_baseline": 200,
+  "aligned_train_evaluation_completed": false,
+  "aligned_partial_train_rows_discarded_from_ram": 15488,
+  "excluded": [
+    "all EEG arrays/private row indices",
+    "all model checkpoint payloads",
+    "credentials/SSH configuration",
+    "unused author-weight tools",
+    "uncompleted train metrics",
+    "installation/data-dedup administration"
+  ]
+}

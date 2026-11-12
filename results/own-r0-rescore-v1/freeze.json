@@ -1,0 +1,72 @@
+{
+  "protocol_sha256": "6a40aec25363f1129fd3f0b89626ebbeaa7c6f36836d714d39321df1985d5a1c",
+  "source_sha256": {
+    "rescore_own.py": "c3c5c4c54b7dbd6a7e189ea5a8e79ba39c3d9780b28fbd23079dbeef1d6a1237",
+    "data/metrics.py": "3133f39a68de8b092ce80cdc13e24f10f95a6d987f0bd2666216561a0144a988"
+  },
+  "environment_sha256": {
+    "pip-freeze.txt": "03e1d9c6d0f5978a7ead30f291cef164a9784d29f9bbe66f41583203f5b0caad",
+    "wheel-lock.json": "9532874ab18dbf7cda6a4ae8428b5ceebeeccb817f4a19f1e5f5765a9b7865e7",
+    "import-check.json": "a14ed53f53b2a063311cbfc492642ada40286d11a521b314feeaa36619d2557b",
+    "conda-explicit-lock.txt": "5275bcc29c6a636f4f8991bec8d533effe2f060ece3d8b2afa430b5db70664ae"
+  },
+  "archives": {
+    "B-test": {
+      "archive": "/home/luansiyu/EEG-Loop/eval-heldout-test-seed0/eval_batch.npz",
+      "archive_sha256": "9870912868b6fbcd812bcb43684a9fb4d6a6e0556cae2124a34fa48bc7bbf73c",
+      "rows": 29421,
+      "histogram": [
+        567,
+        4677,
+        1998,
+        329,
+        2204,
+        19646
+      ],
+      "metrics": "/home/luansiyu/EEG-Loop/eval-heldout-test-seed0/metrics.json",
+      "metrics_sha256": "25d401bb8b0d233a54b6f29f65d47663c2ff36c07e4872e8aad6aa0031d80745",
+      "index": "/home/luansiyu/EEG-Loop/evidence/reference-index/test-seed0.npz",
+      "index_sha256": "8fc319346fcfc97b6964aef6e7ee2490961a16842c67ee73baedf0a28607b884"
+    },
+    "A-train": {
+      "archive": "/home/luansiyu/EEG-Loop/eval-released-train-seed0/eval_batch.npz",
+      "archive_sha256": "a1381b1557c4adb62b75efbafc67e874fb8e496a42dc7eace6bf08e851f96387",
+      "rows": 68445,
+      "histogram": [
+        526,
+        10963,
+        5515,
+        984,
+        10553,
+        39904
+      ],
+      "metrics": "/home/luansiyu/EEG-Loop/eval-released-train-seed0/metrics.json",
+      "metrics_sha256": "3b138d0bc3b689cf900a43a027c98b9f9d0bba3e023a62147d2c1c8d53b3a015",
+      "index": "/home/luansiyu/EEG-Loop/evidence/reference-index/train-seed0.npz",
+      "index_sha256": "15965df6f48e05c80a3792b31ef1c8da27b6949b62a008f45614bbe741845125"
+    }
+  },
+  "operators": {
+    "tsfid-source-1000": [
+      0.5,
+      1000
+    ],
+    "tsfid-paper-v1-1024": [
+      null,
+      1024
+    ]
+  },
+  "execution_order": [
+    "B-test",
+    "A-train"
+  ],
+  "cpu_threads": 1,
+  "self_test": {
+    "passed": true,
+    "independent_covariance_matches_numpy": true,
+    "identity_fid": -1.1102230246251565e-14,
+    "analytic_mean_shift_fid": 0.08000000000000718,
+    "expected": 0.08
+  },
+  "no_checkpoint_or_generation": true
+}

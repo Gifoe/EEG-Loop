@@ -1,0 +1,150 @@
+{
+  "protocol_sha256": "102f426f91163c7b9fbe359f0eba050ec47819bb6429c43befb1fb522e46d300",
+  "engineering_config_sha256": "3939c4c9da3ba2ed54c79c01daa18212e8e41d09d607d30d7ea4aa96bd0e186b",
+  "k1_report_sha256": "47feafdbb01721dbf3f409e156c26e2458866c96d18eea5c31ad21d9f3cf3b47",
+  "checkpoint_sha256": "7047396663de22f02af0ae6676b579cb030be4c9effdd66729b093c22473f418",
+  "fixture_files_sha256": {
+    "probes.pt": "a3612d8855f5b79f43a89bbfc0c84d5666d75d82351f52da0e560b8c9be521e1",
+    "references.pt": "52c3c93196f57d32161b047bc99b78b182887a2bb45b36428abcec88fbaa87c0",
+    "screen-noise.pt": "2bc5a6fc760906f49f7bef45d423945245577c8eba5f1c0e2bae5ac3de00a2e2",
+    "selection.private.npz": "275e7a378545eba045142d6e20efc0196e6d86ea7c7539e24f9714a51cba3012"
+  },
+  "source_sha256": {
+    "run_screen.py": "5b2bfe7a2ab27a7f86f21c1a533729414f98e3eeb4cb92dc47dff85abf942459",
+    "freeze_screen.py": "31ae84c42650819a2711b02b9d31267f7697920cc7d40dcbac89f0b0f78516d0",
+    "screen_metrics.py": "f367c1f98e9cbf2b4b98c7227c8c4d4e267515360e85275f2b1b3bcf6c6a1545",
+    "screen_probes.py": "5e96b3b04f98dee24b89852f634d7444110fb6a7c2c3da3415da04a2dfb0e9b7",
+    "recurrent_wrapper.py": "cae5fdfcd3861e90e59df91411ce236a37fdf3666b420436f818ad241bac0aa1",
+    "prepare_r1.py": "0854559610e5520e9a09ba627e81430a96fc21991e85254eaf4662a1470d7eb1",
+    "verify_k1.py": "0227ab53d800c224f8aa17b3c05db186de68d36e1444c4bc719880949d0d7ce8"
+  },
+  "operator_sha256": {
+    "audit_ts_fid.py": "b926061429660028b72a2973d82b5999fd9dc6a657fa02fb36d3f42093b80ff6",
+    "calibrate_signal.py": "1c4df2296fd71f4e54f7cf272e1d58980c8831b1d49b4e2e1157ef3315518b92",
+    "signal_diagnostics.py": "f12478e2db66fbf990df37d93fc15327dc5935c41d54f0fd4f2117808741fde4",
+    "score_protocol_b.py": "558ebcd18c72c2ed7c9ab2168e4cb3493438c297d9523d7be61abc2fe425d889"
+  },
+  "scale_sha256": "e0699d6becc15936b84e671b43609ef2d0a706d3ebbf75323cc7f8d075eaa3f8",
+  "python": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]",
+  "torch": "2.6.0+cu124",
+  "numpy": "2.4.6",
+  "scipy": "1.15.3",
+  "runtime_prefix": "/home/luansiyu/EEG-Loop/conda-r0",
+  "counts": [
+    119,
+    291,
+    512,
+    86,
+    500,
+    512
+  ],
+  "support": {
+    "0": {
+      "rows": 119,
+      "unique_waveforms": 23,
+      "directory_ids": 7,
+      "payload_linked_components": 7
+    },
+    "1": {
+      "rows": 291,
+      "unique_waveforms": 18,
+      "directory_ids": 2,
+      "payload_linked_components": 2
+    },
+    "2": {
+      "rows": 512,
+      "unique_waveforms": 141,
+      "directory_ids": 4,
+      "payload_linked_components": 3
+    },
+    "3": {
+      "rows": 86,
+      "unique_waveforms": 50,
+      "directory_ids": 5,
+      "payload_linked_components": 5
+    },
+    "4": {
+      "rows": 500,
+      "unique_waveforms": 69,
+      "directory_ids": 11,
+      "payload_linked_components": 11
+    },
+    "5": {
+      "rows": 512,
+      "unique_waveforms": 361,
+      "directory_ids": 41,
+      "payload_linked_components": 38
+    }
+  },
+  "arms": [
+    {
+      "name": "baseline",
+      "k": 1,
+      "steps": 50
+    },
+    {
+      "name": "loop2",
+      "k": 2,
+      "steps": 50
+    },
+    {
+      "name": "loop3",
+      "k": 3,
+      "steps": 50
+    },
+    {
+      "name": "flow67",
+      "k": 1,
+      "steps": 67
+    },
+    {
+      "name": "flow83",
+      "k": 1,
+      "steps": 83
+    }
+  ],
+  "batch_size": 32,
+  "profile_noise_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "profile_warmups": 2,
+  "profile_measurements": 5,
+  "dtype": "float32",
+  "autocast": false,
+  "matmul_tf32": false,
+  "screen_seed": 20261112,
+  "solver": "official Denoiser.generate, uniform Heun with final Euler, CFG1,EMA1",
+  "required_free_bytes": 3221225472,
+  "candidate_gate": "Requires explicit Astra release of this exact config hash"
+}

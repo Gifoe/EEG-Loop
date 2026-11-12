@@ -1,0 +1,76 @@
+{
+  "source_provenance": {
+    "signal-diagnostics.json": {
+      "source": "eval-heldout-test-seed0/signal-diagnostics.json",
+      "source_sha256": "d1754e549691c7c6578e6f9efd3d5ab25d01df636bb3e91339168b739674c77b"
+    },
+    "generation-profile.json": {
+      "source": "eval-heldout-test-seed0/generation-profile.json",
+      "source_sha256": "c84d53b6db7b5da359c1dda3573460e7ed7cdd9ed07ddd30e56cc6fb5cc555f5"
+    },
+    "calibrated-summary.json": {
+      "source": "evidence/protocol-b-scores-seed0/summary.json",
+      "source_sha256": "c491938812641aa953812d16b2ccfaa22a50322f0501b628c30cbdd58214076d"
+    },
+    "calibrated-replicates.json": {
+      "source": "evidence/protocol-b-scores-seed0/replicates.json",
+      "source_sha256": "25610ee7285b2f0f5bda183e877d3236d7c714a10c1e163de6e6933169c2f20c"
+    },
+    "median_scales.json": {
+      "source": "evidence/calibration-b-v1/median_scales.json",
+      "source_sha256": "e0699d6becc15936b84e671b43609ef2d0a706d3ebbf75323cc7f8d075eaa3f8"
+    },
+    "residual-summary.json": {
+      "source": "evidence/residual-channel-seed0/residual-channel.json",
+      "source_sha256": "7bf8116afb328f95d78f171d1353a29de7cc1835835e19590b3b256706d30b1a",
+      "removed_mean_waveform_fields": 12
+    },
+    "diagnostics-coordinator.log": {
+      "source": "evidence/diagnostics-coordinator.log",
+      "source_sha256": "a59390b4f6630ec3e82dc4a16e5bab1896402d981156acc9bb0522b799e091e6"
+    },
+    "protocol-b-score-coordinator.log": {
+      "source": "evidence/protocol-b-score-coordinator.log",
+      "source_sha256": "c1221afab390481a8262ad8db3ade8f4e093badd1c56c38baa716ebe40d038c1"
+    },
+    "residual-channel-coordinator.log": {
+      "source": "evidence/residual-channel-coordinator.log",
+      "source_sha256": "9c64551ca4283875f130bfbb0fcb0fc2226c4cb084bb6a1dfdbe3398ef90bb9b"
+    }
+  },
+  "successful_sentinels": {
+    "eval-heldout-test-seed0/diagnostics.done": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/protocol-b-scores-seed0/scoring.done": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/residual-channel-seed0/residual.done": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/calibration-b-v1/calibration.done": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/evaluation-integrity/test-seed0.verified": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "packet_scope": "Aggregate quality evidence only. Excludes raw/generated EEG, residual mean waveforms, cached features and sample indices.",
+  "files_sha256": {
+    "calibrated-replicates.json": "25610ee7285b2f0f5bda183e877d3236d7c714a10c1e163de6e6933169c2f20c",
+    "generation-profile.json": "c84d53b6db7b5da359c1dda3573460e7ed7cdd9ed07ddd30e56cc6fb5cc555f5",
+    "package_quality_evidence.py": "3ced2fb41016c1a2c3d84b11f6b94d4153a584ca7629ad126ff76de19e07545f",
+    "median_scales.json": "e0699d6becc15936b84e671b43609ef2d0a706d3ebbf75323cc7f8d075eaa3f8",
+    "signal-diagnostics.json": "d1754e549691c7c6578e6f9efd3d5ab25d01df636bb3e91339168b739674c77b",
+    "residual-summary.json": "b1069f777f1d24d6d4f6ec16d853ebd0398226328e113495311a8b2b5bd0a1a8",
+    "protocol-b-score-coordinator.log": "c1221afab390481a8262ad8db3ade8f4e093badd1c56c38baa716ebe40d038c1",
+    "calibrated-summary.json": "c491938812641aa953812d16b2ccfaa22a50322f0501b628c30cbdd58214076d",
+    "diagnostics-coordinator.log": "a59390b4f6630ec3e82dc4a16e5bab1896402d981156acc9bb0522b799e091e6",
+    "residual-channel-coordinator.log": "9c64551ca4283875f130bfbb0fcb0fc2226c4cb084bb6a1dfdbe3398ef90bb9b"
+  }
+}

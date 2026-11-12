@@ -1,0 +1,103 @@
+{
+  "protocol_sha256": "102f426f91163c7b9fbe359f0eba050ec47819bb6429c43befb1fb522e46d300",
+  "checkpoint_sha256": "7047396663de22f02af0ae6676b579cb030be4c9effdd66729b093c22473f418",
+  "upstream_commit": "07f9e6491796f4f2c717d6259b1a2e24afce6a77",
+  "calibration_config_sha256": "ade2110650e655ec1b4e6417a2eec0db35131bd9485c320bf97043436b1500da",
+  "validation_reference_index_sha256": "a1c100f89a1712749974609ba0fe2dc1b0a1553ec15e3dbbac5ec4b28e353b0e",
+  "counts": [
+    119,
+    291,
+    512,
+    86,
+    500,
+    512
+  ],
+  "total": 2020,
+  "support": {
+    "0": {
+      "rows": 119,
+      "unique_waveforms": 23,
+      "directory_ids": 7,
+      "payload_linked_components": 7
+    },
+    "1": {
+      "rows": 291,
+      "unique_waveforms": 18,
+      "directory_ids": 2,
+      "payload_linked_components": 2
+    },
+    "2": {
+      "rows": 512,
+      "unique_waveforms": 141,
+      "directory_ids": 4,
+      "payload_linked_components": 3
+    },
+    "3": {
+      "rows": 86,
+      "unique_waveforms": 50,
+      "directory_ids": 5,
+      "payload_linked_components": 5
+    },
+    "4": {
+      "rows": 500,
+      "unique_waveforms": 69,
+      "directory_ids": 11,
+      "payload_linked_components": 11
+    },
+    "5": {
+      "rows": 512,
+      "unique_waveforms": 361,
+      "directory_ids": 41,
+      "payload_linked_components": 38
+    }
+  },
+  "numpy_version": "2.4.6",
+  "torch_version": "2.6.0+cu124",
+  "selection_seed": 20261112,
+  "screen_noise_seed": 20261112,
+  "probe_noise_seed": 20261113,
+  "screen_noise_tensor_sha256": "92efa269b5d7168372da462378a1198505ac5032a64b0a88d296abb6b4aee8fd",
+  "probe_noise_tensor_sha256": "86845c4dd52a9598fe333ad0e632da5d3af94cbb29b6dafcdc06a4d96d355069",
+  "probe_count": 12,
+  "trajectory_probe_count": 6,
+  "t_grid": [
+    0,
+    0.1,
+    0.5,
+    0.9,
+    0.98
+  ],
+  "batch_size": 32,
+  "dtype": "float32",
+  "autocast": false,
+  "matmul_tf32": false,
+  "solver": "heun",
+  "steps": 50,
+  "final_euler": true,
+  "cfg": 1,
+  "noise_scale": 1,
+  "t_eps": 0.05,
+  "source_sha256": {
+    "freeze_engineering.py": "c7c3b09f5494e0e5128376e40e1a7e5ec2d745613be6cb7bb8ffb6b7b5a2bf16",
+    "prepare_r1.py": "0854559610e5520e9a09ba627e81430a96fc21991e85254eaf4662a1470d7eb1",
+    "recurrent_wrapper.py": "cae5fdfcd3861e90e59df91411ce236a37fdf3666b420436f818ad241bac0aa1",
+    "verify_k1.py": "0227ab53d800c224f8aa17b3c05db186de68d36e1444c4bc719880949d0d7ce8"
+  },
+  "fixture_files_sha256": {
+    "probes.pt": "a3612d8855f5b79f43a89bbfc0c84d5666d75d82351f52da0e560b8c9be521e1",
+    "references.pt": "52c3c93196f57d32161b047bc99b78b182887a2bb45b36428abcec88fbaa87c0",
+    "screen-noise.pt": "2bc5a6fc760906f49f7bef45d423945245577c8eba5f1c0e2bae5ac3de00a2e2",
+    "selection.private.npz": "275e7a378545eba045142d6e20efc0196e6d86ea7c7539e24f9714a51cba3012"
+  },
+  "candidate_generation_authorized": false,
+  "previous_engineering_config_sha256": "ced3945ac52e7325f1612b68a2a65b9c44f0b595bc2cd18938989144c0126900",
+  "previous_source_sha256": {
+    "freeze_engineering.py": "7e7473561358128984dd8b5c13d025eab57fd8ab30e04fabf251abc4a7a7cb20",
+    "prepare_r1.py": "3e0c19c36ca7e77b44add9db6b7fa089ac5a13b9698072ad40787cfc0f6078c0",
+    "recurrent_wrapper.py": "cae5fdfcd3861e90e59df91411ce236a37fdf3666b420436f818ad241bac0aa1",
+    "verify_k1.py": "ddd93e3f8b023cb3992e45afe4bc3be9e2036931ae0ffaf6dfd5ee7c7a0b90f0"
+  },
+  "actual_verified_upstream_commit": "07f9e6491796f4f2c717d6259b1a2e24afce6a77",
+  "guard_amendment": "Added explicit pinned Git HEAD and staged/unstaged cleanliness guards after fixture preparation. Original fixtures/selection/noise preserved byte-identically and reverified before gate.",
+  "initial_engineering_config_sha256": "7503a1b7057a88a7bfa8d6dbc281bc166fae9eb2f25b92e37b92488e4a1dd90f"
+}

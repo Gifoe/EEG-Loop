@@ -1,0 +1,9 @@
+# R1 resumed under the latest user instruction
+
+The user's instruction on2026-11-12 permits adding Loop attempts on the baseline. This supersedes the earlier blanket Loop hold, while the prohibition on author checkpoint use remains. **Authorize only the existing frozen validation pilot on OUR trained released-source R0 checkpoint.** This is not permission to use author weights, tune on test, train recurrence, add variants, or expand datasets.
+
+Keep R1_PROTOCOL.md SHA256102f426f91163c7b9fbe359f0eba050ec47819bb6429c43befb1fb522e46d300 unchanged. Revalidate its checkpoint/fixture/noise/config/source hashes and completed K1 equivalence packet before execution. Preserve the exact2020validation rows, class counts119/291/512/86/500/512, saved paired noise, five arms baseline50/loop2-50/loop3-50/flow67/flow83, float32 batch32, diagnostics, pilot filters and review/stop rules. No new K1 run is needed if its model path and frozen inputs are unchanged. New runner/scoring code still requires source review and pre-generation freeze; completed engineering does not substitute for reviewing unimplemented execution code.
+
+The separate paper-aligned-v1 baseline remains a fresh own-trained joint80-token, direct-vector model. R1 here uses the already-trained channel-separable endpoint-prediction model. Do not transfer improvements, compute comparisons, metric labels or checkpoint identity between these tracks. Neither track is established as independently reproducing the author's235.86. Original expansion gates remain unmet.
+
+Do not modify old artifact statements invisibly: this dated decision supersedes their historical blanket holds; retain original audit/protocol snapshots. Mirror downloads may be used only with official artifact hash verification. No author weight loading/inspection/evaluation/initialization is authorized.

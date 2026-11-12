@@ -1,0 +1,24 @@
+{
+  "batch_size": 32,
+  "warmup_batches": 2,
+  "measured_batches": 5,
+  "batch_latency_s": [
+    7.878197359998012,
+    8.222941683008685,
+    8.11514879699098,
+    8.120287533994997,
+    8.10815463999461
+  ],
+  "median_batch_latency_s": 8.11514879699098,
+  "peak_allocated_mib": 2126.83740234375,
+  "peak_reserved_mib": 2368.0,
+  "nfe": 99,
+  "block_evaluations_per_sample": 1980,
+  "leading_matrix_flops_per_nfe": 25027215360,
+  "leading_matrix_flops_per_generated_sample": 2477694320640,
+  "flop_convention": "2FLOPs/MAC; includes per-channel conditioning, attention, MLP, embeddings and final projection. Excludes elementwise/norm/softmax/EMA copies/solver.",
+  "timing_scope": "Saved CPU noise transfer+clone and clean generation; no hidden probes or diagnostic suffix decoding",
+  "total_generation_s": 504.73238460399443,
+  "generation_peak_allocated_mib": 2124.83740234375,
+  "generation_peak_reserved_mib": 2378.0
+}

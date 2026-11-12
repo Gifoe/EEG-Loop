@@ -1,0 +1,10 @@
+{
+  "epochs": 200,
+  "final_epoch": 199,
+  "elapsed_seconds": 16677.851912415004,
+  "checkpoint_sha256": "c6b4745ced83fc482b5f78dfe572b841996d39d3e94c1912be61a54af0c35032",
+  "checkpoint_bytes": 2598788496,
+  "manifest_sha256": "4d98ade679088bcda8063772fd2210bb601005c0174950baf525fdaa73b1060c",
+  "peak_allocated_mib": 11795.4658203125,
+  "peak_reserved_mib": 12172.0
+}

@@ -1,0 +1,13 @@
+{
+  "files_sha256": {
+    "cost-estimate.json": "0b39c7fd0baefeb95d8fe62cc5c7cab7112068540adefcde0745236a297cf199",
+    "metrics.json": "3b138d0bc3b689cf900a43a027c98b9f9d0bba3e023a62147d2c1c8d53b3a015",
+    "train-seed0.ts-fid-audit.json": "ebdf652c854bfee6b52314dc1cee61acb711f90185d8f6f6800d8fc3226e9a03",
+    "train-seed0.log": "8b07d536e23f68df1e59433ca04294dde336cc4b9fdc102f01d4edc2c7b62786",
+    "completion.json": "ced8b48bbd8e8dd0a30ab0a04f043a467860e3f5a5792ff561abc51651fb3b7e"
+  },
+  "checkpoint_sha256": "7047396663de22f02af0ae6676b579cb030be4c9effdd66729b093c22473f418",
+  "remote_archive_sha256": "a1381b1557c4adb62b75efbafc67e874fb8e496a42dc7eace6bf08e851f96387",
+  "remote_archive_bytes": 8153056958,
+  "scope": "Aggregate result, verification and resource metadata only. Restricted EEG archive remains on the server."
+}

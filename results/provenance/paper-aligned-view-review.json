@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "manifest_sha256": "2159c79f3295f6deb0546caf143b12733b310fced081e871be2d1f99b08f12df",
+  "ledger_sha256": "22e33001c29a4842f8806a51a36581e37fe55fff6f735115de41ffcb8907db6a",
+  "counts": {
+    "train": [
+      526,
+      10963,
+      5515,
+      984,
+      10553,
+      39904
+    ],
+    "val": [
+      119,
+      291,
+      669,
+      86,
+      500,
+      13822
+    ],
+    "test": [
+      567,
+      4677,
+      1998,
+      329,
+      2204,
+      19646
+    ]
+  },
+  "unique_ordered_mapping_rows": 113353,
+  "cross_split_loader_hash_overlaps": {
+    "train/val": 0,
+    "train/test": 0,
+    "val/test": 0
+  },
+  "scope": "Independent aggregate/ledger/source review; per-file readback and finite waveform checks are recorded by the frozen full materializer."
+}

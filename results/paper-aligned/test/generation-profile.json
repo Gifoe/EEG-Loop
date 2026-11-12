@@ -1,0 +1,23 @@
+{
+  "batch": 64,
+  "warmups": 2,
+  "measured": 5,
+  "batch_latency_s": [
+    11.396946777997073,
+    11.590040581009816,
+    11.770982787013054,
+    12.151663202996133,
+    11.651585027982946
+  ],
+  "median_batch_latency_s": 11.651585027982946,
+  "dtype": "float32",
+  "autocast": false,
+  "peak_allocated_mib": 2218.154296875,
+  "peak_reserved_mib": 2476.0,
+  "nfe": 99,
+  "block_evaluations_per_sample": 1188,
+  "leading_matrix_flops_per_nfe": 13963493376,
+  "leading_matrix_flops_per_sample": 1382385844224,
+  "flop_convention": "2FLOPs/MAC; includes joint80 attention, MLP, condition1/example, projections and time MLP; excludes elementwise/norm/softmax/solver/EMA copies.",
+  "timing_scope": "Fixed synthetic seed0 Gaussian initial noise transferred before timing; generate clones it. Independent of real generation noise RNG."
+}

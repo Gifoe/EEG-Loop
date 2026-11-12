@@ -1,0 +1,44 @@
+{
+  "inputs_sha256": {
+    "calibrated-summary.json": "c491938812641aa953812d16b2ccfaa22a50322f0501b628c30cbdd58214076d",
+    "residual-summary.json": "b1069f777f1d24d6d4f6ec16d853ebd0398226328e113495311a8b2b5bd0a1a8"
+  },
+  "training_seed": 0,
+  "scope": "held-out TUEV, one reproduced checkpoint",
+  "families": [
+    "psd",
+    "band_power",
+    "morphology",
+    "temporal",
+    "spatial"
+  ],
+  "class_order": [
+    "SPSW",
+    "GPED",
+    "PLED",
+    "EYEM",
+    "ARTF",
+    "BCKG"
+  ],
+  "calibrated_class_counts": [
+    92,
+    512,
+    380,
+    161,
+    512,
+    512
+  ],
+  "full_class_counts": [
+    567,
+    4677,
+    1998,
+    329,
+    2204,
+    19646
+  ],
+  "residual_statistic": "mean over120 upper-triangle entries of absolute class/domain mean residual Pearson matrix",
+  "calibrated_statistic": "Equal channel and primitive weighting within family, then mean over200 fixed overlapping subset repetitions.",
+  "uncertainty": "Descriptive point summaries only; repetitions do not represent independent training seeds.",
+  "font": "DejaVu Sans",
+  "matplotlib": "3.10.7"
+}

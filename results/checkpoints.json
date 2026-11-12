@@ -1,0 +1,18 @@
+{
+  "distributed_in_git": false,
+  "reason": "Own large weights remain on the research server; no EEG/weight payload is exported.",
+  "own_checkpoints": [
+    {
+      "variant": "released-source-r0",
+      "sha256": "7047396663de22f02af0ae6676b579cb030be4c9effdd66729b093c22473f418",
+      "epoch": 199
+    },
+    {
+      "variant": "paper-main-method-aligned-v1",
+      "sha256": "c6b4745ced83fc482b5f78dfe572b841996d39d3e94c1912be61a54af0c35032",
+      "epoch": 199,
+      "bytes": 2598788496
+    }
+  ],
+  "author_weights_used": false
+}

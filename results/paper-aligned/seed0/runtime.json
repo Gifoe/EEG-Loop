@@ -1,0 +1,29 @@
+{
+  "manifest_sha256": "4d98ade679088bcda8063772fd2210bb601005c0174950baf525fdaa73b1060c",
+  "resume": false,
+  "start_epoch": 0,
+  "torch": "2.7.1+cu128",
+  "numpy": "2.2.6",
+  "backend": {
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "cudnn_benchmark": true,
+    "cudnn_deterministic": false
+  },
+  "storage_check": {
+    "required_free_bytes": 15968709120,
+    "existing_unique_checkpoint_bytes": 0
+  },
+  "loss_coefficients": {
+    "reconstruction": 1,
+    "statistics": 1,
+    "tv": 0.1,
+    "pearson": 0.1
+  },
+  "moment_axis": "all1000timepoints",
+  "std_correction": 1,
+  "tv_normalization": 1000,
+  "class_drop": "training only",
+  "sampler": "inverse-frequency replacement N draws; drop_last",
+  "initialization": "Fresh own seed0"
+}

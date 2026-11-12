@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "checks": {
+    "overall": {
+      "samples_per_collection": 2020,
+      "upstream": 365.6762855927624,
+      "symmetric": 365.67629011147227,
+      "difference": 4.518709886269789e-06,
+      "absolute_tolerance": 0.004656762855927624,
+      "passed": true
+    },
+    "0": {
+      "samples_per_collection": 119,
+      "upstream": 205.35154551504326,
+      "symmetric": 205.35156872648102,
+      "difference": 2.3211437763848153e-05,
+      "absolute_tolerance": 0.0030535154551504327,
+      "passed": true
+    },
+    "1": {
+      "samples_per_collection": 291,
+      "upstream": 526.2835777167684,
+      "symmetric": 526.2835884999564,
+      "difference": 1.0783188031382451e-05,
+      "absolute_tolerance": 0.006262835777167684,
+      "passed": true
+    },
+    "2": {
+      "samples_per_collection": 512,
+      "upstream": 442.5055133295559,
+      "symmetric": 442.5055203310604,
+      "difference": 7.001504457093688e-06,
+      "absolute_tolerance": 0.005425055133295559,
+      "passed": true
+    },
+    "3": {
+      "samples_per_collection": 86,
+      "upstream": 243.88452430893543,
+      "symmetric": 243.88454495810493,
+      "difference": 2.0649169499620257e-05,
+      "absolute_tolerance": 0.0034388452430893545,
+      "passed": true
+    },
+    "4": {
+      "samples_per_collection": 500,
+      "upstream": 581.2489375827208,
+      "symmetric": 581.2489881042713,
+      "difference": 5.052155051998852e-05,
+      "absolute_tolerance": 0.0068124893758272085,
+      "passed": true
+    },
+    "5": {
+      "samples_per_collection": 512,
+      "upstream": 413.7025029281725,
+      "symmetric": 413.7025108774417,
+      "difference": 7.949269161144912e-06,
+      "absolute_tolerance": 0.005137025029281725,
+      "passed": true
+    }
+  }
+}

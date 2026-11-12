@@ -1,0 +1,13 @@
+test-seed0.npz: OK
+calibration_config.json: OK
+partitions.json: OK
+native_discrepancies.json: OK
+median_scales.json: OK
+cache_primitive_counts.json: OK
+sample_indices.npz: OK
+Scored held-out class 0
+Scored held-out class 1
+Scored held-out class 2
+Scored held-out class 3
+Scored held-out class 4
+Scored held-out class 5

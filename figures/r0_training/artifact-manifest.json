@@ -1,0 +1,19 @@
+{
+  "files_sha256": {
+    "epochs.csv": "cc39a294f976f574b4fcc96c6e88305f9d7330edf1d2cf29e6a5be1533594be1",
+    "metadata.json": "6617201743b1fde756fcd76c83c218b44c607603781134225fa33b222fd5bb47",
+    "plot_training.py": "1bf7d739b456494cd5cd15df36916135f5d902a572701262521e24813b87da0d",
+    "r0_training.pdf": "959d10ee2263c3c1b3725e0b4ed1f872f5dc3da6df1670123b056f1d82c07193",
+    "r0_training.png": "d3346d196a67e9be5b47ef2d9c1f13925418de151e98188640a35a22e6cca837",
+    "r0_training.svg": "19d29027291ddebc9deee75ee39f3499ae865a168f4aad205393f7b91dc6bd6b",
+    "README.md": "bde5f0dd14fdae4948400167333c39d9f1ea4c981a30eb656522f191f343daa4"
+  },
+  "original_log_sha256": "0d8835fa63fb4e847abf9e7601ff19d4cfdefe5f1d5aa223401f9e737fa36a37",
+  "matplotlib_version": "3.10.7",
+  "font": "DejaVu Sans",
+  "exports": {
+    "png_dpi": 300,
+    "svg_editable_text": true,
+    "pdf_fonttype": 42
+  }
+}

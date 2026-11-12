@@ -1,0 +1,380 @@
+{
+  "status": "no_detected_configuration_mismatch",
+  "mismatches": [],
+  "comparisons": {
+    "model": {
+      "expected": "JiT-B/16",
+      "training": "JiT-B/16",
+      "source_a": "JiT-B/16",
+      "heldout_b": "JiT-B/16",
+      "matches": true
+    },
+    "num_eeg_channels": {
+      "expected": 16,
+      "training": 16,
+      "source_a": 16,
+      "heldout_b": 16,
+      "matches": true
+    },
+    "target_length": {
+      "expected": 1000,
+      "training": 1000,
+      "source_a": 1000,
+      "heldout_b": 1000,
+      "matches": true
+    },
+    "eeg_patch_size": {
+      "expected": 200,
+      "training": 200,
+      "source_a": 200,
+      "heldout_b": 200,
+      "matches": true
+    },
+    "attn_dropout": {
+      "expected": 0.0,
+      "training": 0.0,
+      "source_a": 0.0,
+      "heldout_b": 0.0,
+      "matches": true
+    },
+    "proj_dropout": {
+      "expected": 0.0,
+      "training": 0.0,
+      "source_a": 0.0,
+      "heldout_b": 0.0,
+      "matches": true
+    },
+    "noise_type": {
+      "expected": "gs",
+      "training": "gs",
+      "source_a": "gs",
+      "heldout_b": "gs",
+      "matches": true
+    },
+    "noise_scale": {
+      "expected": 1.0,
+      "training": 1.0,
+      "source_a": 1.0,
+      "heldout_b": 1.0,
+      "matches": true
+    },
+    "t_eps": {
+      "expected": 0.05,
+      "training": 0.05,
+      "source_a": 0.05,
+      "heldout_b": 0.05,
+      "matches": true
+    },
+    "sampling_method": {
+      "expected": "heun",
+      "training": "heun",
+      "source_a": "heun",
+      "heldout_b": "heun",
+      "matches": true
+    },
+    "num_sampling_steps": {
+      "expected": 50,
+      "training": 50,
+      "source_a": 50,
+      "heldout_b": 50,
+      "matches": true
+    },
+    "cfg": {
+      "expected": 1.0,
+      "training": 1.0,
+      "source_a": 1.0,
+      "heldout_b": 1.0,
+      "matches": true
+    },
+    "seed": {
+      "expected": 0,
+      "training": 0,
+      "source_a": 0,
+      "heldout_b": 0,
+      "matches": true
+    },
+    "P_mean": {
+      "expected": -0.8,
+      "training": -0.8,
+      "source_a": -0.8,
+      "heldout_b": -0.8,
+      "matches": true
+    },
+    "P_std": {
+      "expected": 0.8,
+      "training": 0.8,
+      "source_a": 0.8,
+      "heldout_b": 0.8,
+      "matches": true
+    },
+    "label_drop_prob": {
+      "expected": 0.1,
+      "training": 0.1,
+      "source_a": 0.1,
+      "heldout_b": 0.1,
+      "matches": true
+    },
+    "ema_decay1": {
+      "expected": 0.9999,
+      "training": 0.9999,
+      "source_a": 0.9999,
+      "heldout_b": 0.9999,
+      "matches": true
+    },
+    "ema_decay2": {
+      "expected": 0.9996,
+      "training": 0.9996,
+      "source_a": 0.9996,
+      "heldout_b": 0.9996,
+      "matches": true
+    }
+  },
+  "checkpoint_structure": {
+    "blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "pos_embed_shape": [
+      1,
+      5,
+      768
+    ],
+    "patch_projection_shape": [
+      768,
+      200
+    ],
+    "class_embedding_shape": [
+      7,
+      768
+    ],
+    "all_state_dtypes": [
+      "torch.float32"
+    ],
+    "same_model_ema_key_and_shape_sets": true,
+    "stored_checkpoint_keys": [
+      "model",
+      "model_ema1",
+      "model_ema2",
+      "optimizer",
+      "epoch"
+    ],
+    "epoch": 199,
+    "heads_from_pinned_source": 12
+  },
+  "checkpoint_args_status": "No args saved in official checkpoint. Actual training Namespace log and pinned source supply configuration.",
+  "checkpoint_sha256": "7047396663de22f02af0ae6676b579cb030be4c9effdd66729b093c22473f418",
+  "source_a_command": {
+    "dataset": "tuev",
+    "datasets_dir": "/home/luansiyu/EEG-Loop/tuev-official",
+    "resume": "/home/luansiyu/EEG-Loop/baseline-seed0",
+    "output_dir": "/home/luansiyu/EEG-Loop/eval-released-train-seed0",
+    "eval_split": "train",
+    "model": "JiT-B/16",
+    "num_eeg_channels": 16,
+    "eeg_patch_size": 200,
+    "target_length": 1000,
+    "attn_dropout": 0.0,
+    "proj_dropout": 0.0,
+    "noise_type": "gs",
+    "noise_scale": 1.0,
+    "t_eps": 0.05,
+    "P_mean": -0.8,
+    "P_std": 0.8,
+    "label_drop_prob": 0.1,
+    "ema_decay1": 0.9999,
+    "ema_decay2": 0.9996,
+    "loss_type": "mix",
+    "loss_weight_stft": 0.0,
+    "loss_weight_stat": 1.0,
+    "loss_weight_tv": 0.1,
+    "loss_weight_corr": 0.1,
+    "sampling_method": "heun",
+    "num_sampling_steps": 50,
+    "cfg": 1.0,
+    "interval_min": 0.0,
+    "interval_max": 1.0,
+    "num_images": 0,
+    "gen_bsz": 64,
+    "eval_label_mode": "match_gt",
+    "fid_feature_bins": 256,
+    "seed": 0,
+    "device": "cuda",
+    "eeg_patch_num": 5,
+    "class_num": 6,
+    "weights_used": "model_ema1",
+    "nfe_per_sample": 99,
+    "model_parameter_dtype": "float32",
+    "autocast": false,
+    "feature_dimensions_effective": 1000
+  },
+  "heldout_b_command": [
+    "python",
+    "inference.py",
+    "--dataset",
+    "tuev",
+    "--datasets_dir",
+    "/home/luansiyu/EEG-Loop/tuev-official",
+    "--resume",
+    "/home/luansiyu/EEG-Loop/baseline-seed0",
+    "--output_dir",
+    "/home/luansiyu/EEG-Loop/eval-heldout-test-seed0",
+    "--num_images",
+    "0",
+    "--gen_bsz",
+    "64",
+    "--eval_split",
+    "test",
+    "--eval_label_mode",
+    "match_gt",
+    "--seed",
+    "0"
+  ],
+  "heldout_b_resolved_args": {
+    "dataset": "tuev",
+    "datasets_dir": "/home/luansiyu/EEG-Loop/tuev-official",
+    "resume": "/home/luansiyu/EEG-Loop/baseline-seed0",
+    "output_dir": "/home/luansiyu/EEG-Loop/eval-heldout-test-seed0",
+    "eval_split": "test",
+    "model": "JiT-B/16",
+    "num_eeg_channels": 16,
+    "eeg_patch_size": 200,
+    "target_length": 1000,
+    "attn_dropout": 0.0,
+    "proj_dropout": 0.0,
+    "noise_type": "gs",
+    "noise_scale": 1.0,
+    "t_eps": 0.05,
+    "P_mean": -0.8,
+    "P_std": 0.8,
+    "label_drop_prob": 0.1,
+    "ema_decay1": 0.9999,
+    "ema_decay2": 0.9996,
+    "loss_type": "mix",
+    "loss_weight_stft": 0.0,
+    "loss_weight_stat": 1.0,
+    "loss_weight_tv": 0.1,
+    "loss_weight_corr": 0.1,
+    "sampling_method": "heun",
+    "num_sampling_steps": 50,
+    "cfg": 1.0,
+    "interval_min": 0.0,
+    "interval_max": 1.0,
+    "num_images": 0,
+    "gen_bsz": 64,
+    "eval_label_mode": "match_gt",
+    "fid_feature_bins": 256,
+    "seed": 0,
+    "device": "cuda",
+    "eeg_patch_num": 5,
+    "class_num": 6
+  },
+  "precision": {
+    "model_ema_dtype": "float32",
+    "training_autocast": "bfloat16",
+    "inference_autocast_in_source": false,
+    "fresh_installed_torch_matmul_allow_tf32": false,
+    "fresh_installed_torch_cudnn_allow_tf32": true,
+    "live_b_selected_environment": {},
+    "limit": "Live CUDA precision flags were not separately serialized. Source has no precision/backend overrides; installed-process defaults checked without GPU execution."
+  },
+  "sampling": {
+    "ema": "model_ema1",
+    "uniform_grid_steps": 50,
+    "heun_steps": 49,
+    "final_euler_steps": 1,
+    "conditional_nfe_per_sample": 99,
+    "cfg1_uses_conditional_only": true,
+    "gaussian_scale": 1,
+    "same_seed_across_splits": 0,
+    "generation_batch_size": 64
+  },
+  "representation": {
+    "loader_normalization": "microvolts divided by100",
+    "labels": "REC1..6 maps to0..5",
+    "channel_order": [
+      "FP1-F7",
+      "F7-T3",
+      "T3-T5",
+      "T5-O1",
+      "FP2-F8",
+      "F8-T4",
+      "T4-T6",
+      "T6-O2",
+      "FP1-F3",
+      "F3-C3",
+      "C3-P3",
+      "P3-O1",
+      "FP2-F4",
+      "F4-C4",
+      "C4-P4",
+      "P4-O2"
+    ],
+    "sampling_rate_hz": 200,
+    "window_shape": [
+      16,
+      1000
+    ],
+    "feature_requested_bins": 256,
+    "effective_frequency_bins": 250,
+    "spatial_groups": 4,
+    "feature_dimension_synthetic_verified": 1000,
+    "frequency_range_hz": [
+      0,
+      49.8
+    ]
+  },
+  "class_counts": {
+    "train": [
+      526,
+      10963,
+      5515,
+      984,
+      10553,
+      39904
+    ],
+    "test": [
+      567,
+      4677,
+      1998,
+      329,
+      2204,
+      19646
+    ]
+  },
+  "source_sha256": {
+    "inference.py": "25f5be4c400cb15ea872ad0a248425c230ce3e0fc0471b28efeb747497e3ad50",
+    "train_eeg.py": "37c03e258581c257f32046f0ada6397d33edd6697b260c58ade55ac2e6d8d431",
+    "engine_eeg.py": "af29fb55b30330bbf9b42381bfbcbf16c8fb12a32e7c4c0ff0f1b26d8ac577f4",
+    "denoiser.py": "445781d754daaf2df1c7321832701e59aefdfa3641ffbb4d8517545ca87d075e",
+    "models/raw_vit.py": "d7a9ae6d0dd4ef4a8f6fd3aa7aeea9fd8f90f28a37e18f7e865654acde18879f",
+    "data/metrics.py": "3133f39a68de8b092ce80cdc13e24f10f95a6d987f0bd2666216561a0144a988",
+    "data/tuev_dataset.py": "5cac6461bda7c9126f2fd6737933c030ccba88afb524943f269143b382f30b5f",
+    "data/preprocess_tuev.py": "d0729cee654beb770b7330f640c21b423f43771a5860cfe3d9fe7b2e01434423",
+    "scripts/train_tuev.sh": "63fb13d3df4c3f56456484f89f016cfbbb329e8509c18b255cf4c9fc3a3c4aff",
+    "scripts/infer_tuev.sh": "b4994b215027518335a3f2d907391c2110cf10a5a907cc2a30438a042ce9790d"
+  },
+  "evidence_sha256": {
+    "baseline-seed0.log": "0d8835fa63fb4e847abf9e7601ff19d4cfdefe5f1d5aa223401f9e737fa36a37",
+    "r0-source-a-completion-v1/completion.json": "ced8b48bbd8e8dd0a30ab0a04f043a467860e3f5a5792ff561abc51651fb3b7e",
+    "final-checkpoints.audit.json": "27b33366004b24002f4818050ae85e6c7c791ac0682690434cd0b9e4a5b13f92",
+    "reference-index/train-seed0.npz": "15965df6f48e05c80a3792b31ef1c8da27b6949b62a008f45614bbe741845125",
+    "reference-index/test-seed0.npz": "8fc319346fcfc97b6964aef6e7ee2490961a16842c67ee73baedf0a28607b884",
+    "processed-manifest.json": "1d4aea921b17c8a872811bb10cbccf1cc74900f2fcbbd27ccc3532869a23c98d"
+  },
+  "auditor_sha256": "2de9e3de4eabe2c5439e8fec3e709ee7f997db1c483b6fbd4ddad3889cd14788",
+  "limits": [
+    "Configuration reconciliation does not establish comparability to the paper's TS-FID.",
+    "B is still running; class counts are frozen index expectations until output and integrity audits complete.",
+    "Checkpoint loaded through mmap on CPU. No EEG archives decompressed or GPU model executed."
+  ]
+}

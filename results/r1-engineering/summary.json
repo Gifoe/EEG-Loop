@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "forward_comparisons": 10,
+  "forward_examples_per_comparison": 12,
+  "trajectory_nfe": 99,
+  "trajectory_examples": 6,
+  "trajectory_probe_labels": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+  ],
+  "maximum_absolute_error": 0.0,
+  "maximum_relative_l2_error": 0.0,
+  "state_and_ema_unchanged": true,
+  "state_hashes": {
+    "model": "7ee202b4beec1cd0f2506d9ec2f68640d5a8d1eee2ecb4ec8d707bf5a3f97cc7",
+    "ema1": "dd7a4b2d1465c4941a788f6e98a6a38958ae3154571cc9411ae0a809a0c9cfe0",
+    "ema2": "995935d6bec29266cc2cc24e33cbfc83be911c1a0fbc44952dddd28212d84886"
+  },
+  "checkpoint_sha256": "7047396663de22f02af0ae6676b579cb030be4c9effdd66729b093c22473f418",
+  "final_config_sha256": "3939c4c9da3ba2ed54c79c01daa18212e8e41d09d607d30d7ea4aa96bd0e186b",
+  "report_sha256": "47feafdbb01721dbf3f409e156c26e2458866c96d18eea5c31ad21d9f3cf3b47",
+  "counts": [
+    119,
+    291,
+    512,
+    86,
+    500,
+    512
+  ],
+  "support": {
+    "0": {
+      "rows": 119,
+      "unique_waveforms": 23,
+      "directory_ids": 7,
+      "payload_linked_components": 7
+    },
+    "1": {
+      "rows": 291,
+      "unique_waveforms": 18,
+      "directory_ids": 2,
+      "payload_linked_components": 2
+    },
+    "2": {
+      "rows": 512,
+      "unique_waveforms": 141,
+      "directory_ids": 4,
+      "payload_linked_components": 3
+    },
+    "3": {
+      "rows": 86,
+      "unique_waveforms": 50,
+      "directory_ids": 5,
+      "payload_linked_components": 5
+    },
+    "4": {
+      "rows": 500,
+      "unique_waveforms": 69,
+      "directory_ids": 11,
+      "payload_linked_components": 11
+    },
+    "5": {
+      "rows": 512,
+      "unique_waveforms": 361,
+      "directory_ids": 41,
+      "payload_linked_components": 38
+    }
+  },
+  "screen_noise_tensor_sha256": "92efa269b5d7168372da462378a1198505ac5032a64b0a88d296abb6b4aee8fd",
+  "probe_noise_tensor_sha256": "86845c4dd52a9598fe333ad0e632da5d3af94cbb29b6dafcdc06a4d96d355069",
+  "backend": {
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "device": "NVIDIA RTX A6000",
+    "torch_version": "2.6.0+cu124"
+  },
+  "tracked_git_status": "",
+  "gpu_inventory_after_gate": "",
+  "candidate_generation_authorized": false
+}

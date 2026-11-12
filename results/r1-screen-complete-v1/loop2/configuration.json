@@ -1,0 +1,16 @@
+{
+  "name": "loop2",
+  "k": 2,
+  "steps": 50,
+  "batch_size": 32,
+  "initial_noise_file_sha256": "2bc5a6fc760906f49f7bef45d423945245577c8eba5f1c0e2bae5ac3de00a2e2",
+  "counts": [
+    119,
+    291,
+    512,
+    86,
+    500,
+    512
+  ],
+  "approved_config_sha256": "df72fb356fb197d4e59fd25a37bb8406e5b95a74a0eb575aa20b1ad216689bd3"
+}

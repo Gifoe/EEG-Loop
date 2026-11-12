@@ -1,0 +1,4480 @@
+{
+  "passed": true,
+  "tolerances": {
+    "atol": 1e-06,
+    "rtol": 1e-05
+  },
+  "backend": {
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "device": "NVIDIA RTX A6000",
+    "torch_version": "2.6.0+cu124"
+  },
+  "config_sha256": "3939c4c9da3ba2ed54c79c01daa18212e8e41d09d607d30d7ea4aa96bd0e186b",
+  "checkpoint_sha256": "7047396663de22f02af0ae6676b579cb030be4c9effdd66729b093c22473f418",
+  "checkpoint_epoch": 199,
+  "source_sha256": {
+    "freeze_engineering.py": "c7c3b09f5494e0e5128376e40e1a7e5ec2d745613be6cb7bb8ffb6b7b5a2bf16",
+    "prepare_r1.py": "0854559610e5520e9a09ba627e81430a96fc21991e85254eaf4662a1470d7eb1",
+    "recurrent_wrapper.py": "cae5fdfcd3861e90e59df91411ce236a37fdf3666b420436f818ad241bac0aa1",
+    "verify_k1.py": "0227ab53d800c224f8aa17b3c05db186de68d36e1444c4bc719880949d0d7ce8"
+  },
+  "forward_checks": [
+    {
+      "label_mode": "conditioned",
+      "t": 0,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label_mode": "conditioned",
+      "t": 0.1,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label_mode": "conditioned",
+      "t": 0.5,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label_mode": "conditioned",
+      "t": 0.9,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label_mode": "conditioned",
+      "t": 0.98,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label_mode": "null",
+      "t": 0,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label_mode": "null",
+      "t": 0.1,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label_mode": "null",
+      "t": 0.5,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label_mode": "null",
+      "t": 0.9,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label_mode": "null",
+      "t": 0.98,
+      "shape": [
+        12,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "trajectory_probe_labels": [
+    0,
+    0,
+    1,
+    1,
+    2,
+    2
+  ],
+  "trajectory_probe_classes": [
+    0,
+    1,
+    2
+  ],
+  "trajectory_nfe": 99,
+  "trajectory_checks": [
+    {
+      "nfe_zero_based": 0,
+      "t": 0.0,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 1,
+      "t": 0.019999999552965164,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 2,
+      "t": 0.019999999552965164,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 3,
+      "t": 0.03999999910593033,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 4,
+      "t": 0.03999999910593033,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 5,
+      "t": 0.05999999865889549,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 6,
+      "t": 0.05999999865889549,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 7,
+      "t": 0.07999999821186066,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 8,
+      "t": 0.07999999821186066,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 9,
+      "t": 0.09999999403953552,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 10,
+      "t": 0.09999999403953552,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 11,
+      "t": 0.11999999731779099,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 12,
+      "t": 0.11999999731779099,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 13,
+      "t": 0.14000000059604645,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 14,
+      "t": 0.14000000059604645,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 15,
+      "t": 0.1599999964237213,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 16,
+      "t": 0.1599999964237213,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 17,
+      "t": 0.17999999225139618,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 18,
+      "t": 0.17999999225139618,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 19,
+      "t": 0.19999998807907104,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 20,
+      "t": 0.19999998807907104,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 21,
+      "t": 0.2199999988079071,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 22,
+      "t": 0.2199999988079071,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 23,
+      "t": 0.23999999463558197,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 24,
+      "t": 0.23999999463558197,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 25,
+      "t": 0.25999999046325684,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 26,
+      "t": 0.25999999046325684,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 27,
+      "t": 0.2800000011920929,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 28,
+      "t": 0.2800000011920929,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 29,
+      "t": 0.29999998211860657,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 30,
+      "t": 0.29999998211860657,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 31,
+      "t": 0.3199999928474426,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 32,
+      "t": 0.3199999928474426,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 33,
+      "t": 0.3400000035762787,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 34,
+      "t": 0.3400000035762787,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 35,
+      "t": 0.35999998450279236,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 36,
+      "t": 0.35999998450279236,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 37,
+      "t": 0.3799999952316284,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 38,
+      "t": 0.3799999952316284,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 39,
+      "t": 0.3999999761581421,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 40,
+      "t": 0.3999999761581421,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 41,
+      "t": 0.41999998688697815,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 42,
+      "t": 0.41999998688697815,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 43,
+      "t": 0.4399999976158142,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 44,
+      "t": 0.4399999976158142,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 45,
+      "t": 0.4599999785423279,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 46,
+      "t": 0.4599999785423279,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 47,
+      "t": 0.47999998927116394,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 48,
+      "t": 0.47999998927116394,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 49,
+      "t": 0.5,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 50,
+      "t": 0.5,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 51,
+      "t": 0.5199999809265137,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 52,
+      "t": 0.5199999809265137,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 53,
+      "t": 0.5400000214576721,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 54,
+      "t": 0.5400000214576721,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 55,
+      "t": 0.5600000023841858,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 56,
+      "t": 0.5600000023841858,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 57,
+      "t": 0.5799999833106995,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 58,
+      "t": 0.5799999833106995,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 59,
+      "t": 0.6000000238418579,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 60,
+      "t": 0.6000000238418579,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 61,
+      "t": 0.6200000047683716,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 62,
+      "t": 0.6200000047683716,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 63,
+      "t": 0.6399999856948853,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 64,
+      "t": 0.6399999856948853,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 65,
+      "t": 0.6600000262260437,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 66,
+      "t": 0.6600000262260437,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 67,
+      "t": 0.6800000071525574,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 68,
+      "t": 0.6800000071525574,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 69,
+      "t": 0.699999988079071,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 70,
+      "t": 0.699999988079071,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 71,
+      "t": 0.7200000286102295,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 72,
+      "t": 0.7200000286102295,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 73,
+      "t": 0.7400000095367432,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 74,
+      "t": 0.7400000095367432,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 75,
+      "t": 0.7599999904632568,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 76,
+      "t": 0.7599999904632568,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 77,
+      "t": 0.7800000309944153,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 78,
+      "t": 0.7800000309944153,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 79,
+      "t": 0.800000011920929,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 80,
+      "t": 0.800000011920929,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 81,
+      "t": 0.8199999928474426,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 82,
+      "t": 0.8199999928474426,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 83,
+      "t": 0.8400000333786011,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 84,
+      "t": 0.8400000333786011,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 85,
+      "t": 0.8600000143051147,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 86,
+      "t": 0.8600000143051147,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 87,
+      "t": 0.8799999952316284,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 88,
+      "t": 0.8799999952316284,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 89,
+      "t": 0.8999999761581421,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 90,
+      "t": 0.8999999761581421,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 91,
+      "t": 0.9200000166893005,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 92,
+      "t": 0.9200000166893005,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 93,
+      "t": 0.9399999976158142,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 94,
+      "t": 0.9399999976158142,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 95,
+      "t": 0.9599999785423279,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 96,
+      "t": 0.9599999785423279,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 97,
+      "t": 0.9800000190734863,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "nfe_zero_based": 98,
+      "t": 0.9800000190734863,
+      "shape": [
+        6,
+        16,
+        5,
+        200
+      ],
+      "shape_match": true,
+      "finite": true,
+      "passed": true,
+      "max_absolute_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_l2_error_by_example": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "final_waveform_check": {
+    "shape": [
+      6,
+      16,
+      5,
+      200
+    ],
+    "shape_match": true,
+    "finite": true,
+    "passed": true,
+    "max_absolute_error_by_example": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "relative_l2_error_by_example": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "state_before": {
+    "model": {
+      "keys": [
+        "net.blocks.0.adaLN_modulation.1.bias",
+        "net.blocks.0.adaLN_modulation.1.weight",
+        "net.blocks.0.attn.in_proj_bias",
+        "net.blocks.0.attn.in_proj_weight",
+        "net.blocks.0.attn.out_proj.bias",
+        "net.blocks.0.attn.out_proj.weight",
+        "net.blocks.0.mlp.0.bias",
+        "net.blocks.0.mlp.0.weight",
+        "net.blocks.0.mlp.3.bias",
+        "net.blocks.0.mlp.3.weight",
+        "net.blocks.0.norm1.bias",
+        "net.blocks.0.norm1.weight",
+        "net.blocks.0.norm2.bias",
+        "net.blocks.0.norm2.weight",
+        "net.blocks.1.adaLN_modulation.1.bias",
+        "net.blocks.1.adaLN_modulation.1.weight",
+        "net.blocks.1.attn.in_proj_bias",
+        "net.blocks.1.attn.in_proj_weight",
+        "net.blocks.1.attn.out_proj.bias",
+        "net.blocks.1.attn.out_proj.weight",
+        "net.blocks.1.mlp.0.bias",
+        "net.blocks.1.mlp.0.weight",
+        "net.blocks.1.mlp.3.bias",
+        "net.blocks.1.mlp.3.weight",
+        "net.blocks.1.norm1.bias",
+        "net.blocks.1.norm1.weight",
+        "net.blocks.1.norm2.bias",
+        "net.blocks.1.norm2.weight",
+        "net.blocks.10.adaLN_modulation.1.bias",
+        "net.blocks.10.adaLN_modulation.1.weight",
+        "net.blocks.10.attn.in_proj_bias",
+        "net.blocks.10.attn.in_proj_weight",
+        "net.blocks.10.attn.out_proj.bias",
+        "net.blocks.10.attn.out_proj.weight",
+        "net.blocks.10.mlp.0.bias",
+        "net.blocks.10.mlp.0.weight",
+        "net.blocks.10.mlp.3.bias",
+        "net.blocks.10.mlp.3.weight",
+        "net.blocks.10.norm1.bias",
+        "net.blocks.10.norm1.weight",
+        "net.blocks.10.norm2.bias",
+        "net.blocks.10.norm2.weight",
+        "net.blocks.11.adaLN_modulation.1.bias",
+        "net.blocks.11.adaLN_modulation.1.weight",
+        "net.blocks.11.attn.in_proj_bias",
+        "net.blocks.11.attn.in_proj_weight",
+        "net.blocks.11.attn.out_proj.bias",
+        "net.blocks.11.attn.out_proj.weight",
+        "net.blocks.11.mlp.0.bias",
+        "net.blocks.11.mlp.0.weight",
+        "net.blocks.11.mlp.3.bias",
+        "net.blocks.11.mlp.3.weight",
+        "net.blocks.11.norm1.bias",
+        "net.blocks.11.norm1.weight",
+        "net.blocks.11.norm2.bias",
+        "net.blocks.11.norm2.weight",
+        "net.blocks.2.adaLN_modulation.1.bias",
+        "net.blocks.2.adaLN_modulation.1.weight",
+        "net.blocks.2.attn.in_proj_bias",
+        "net.blocks.2.attn.in_proj_weight",
+        "net.blocks.2.attn.out_proj.bias",
+        "net.blocks.2.attn.out_proj.weight",
+        "net.blocks.2.mlp.0.bias",
+        "net.blocks.2.mlp.0.weight",
+        "net.blocks.2.mlp.3.bias",
+        "net.blocks.2.mlp.3.weight",
+        "net.blocks.2.norm1.bias",
+        "net.blocks.2.norm1.weight",
+        "net.blocks.2.norm2.bias",
+        "net.blocks.2.norm2.weight",
+        "net.blocks.3.adaLN_modulation.1.bias",
+        "net.blocks.3.adaLN_modulation.1.weight",
+        "net.blocks.3.attn.in_proj_bias",
+        "net.blocks.3.attn.in_proj_weight",
+        "net.blocks.3.attn.out_proj.bias",
+        "net.blocks.3.attn.out_proj.weight",
+        "net.blocks.3.mlp.0.bias",
+        "net.blocks.3.mlp.0.weight",
+        "net.blocks.3.mlp.3.bias",
+        "net.blocks.3.mlp.3.weight",
+        "net.blocks.3.norm1.bias",
+        "net.blocks.3.norm1.weight",
+        "net.blocks.3.norm2.bias",
+        "net.blocks.3.norm2.weight",
+        "net.blocks.4.adaLN_modulation.1.bias",
+        "net.blocks.4.adaLN_modulation.1.weight",
+        "net.blocks.4.attn.in_proj_bias",
+        "net.blocks.4.attn.in_proj_weight",
+        "net.blocks.4.attn.out_proj.bias",
+        "net.blocks.4.attn.out_proj.weight",
+        "net.blocks.4.mlp.0.bias",
+        "net.blocks.4.mlp.0.weight",
+        "net.blocks.4.mlp.3.bias",
+        "net.blocks.4.mlp.3.weight",
+        "net.blocks.4.norm1.bias",
+        "net.blocks.4.norm1.weight",
+        "net.blocks.4.norm2.bias",
+        "net.blocks.4.norm2.weight",
+        "net.blocks.5.adaLN_modulation.1.bias",
+        "net.blocks.5.adaLN_modulation.1.weight",
+        "net.blocks.5.attn.in_proj_bias",
+        "net.blocks.5.attn.in_proj_weight",
+        "net.blocks.5.attn.out_proj.bias",
+        "net.blocks.5.attn.out_proj.weight",
+        "net.blocks.5.mlp.0.bias",
+        "net.blocks.5.mlp.0.weight",
+        "net.blocks.5.mlp.3.bias",
+        "net.blocks.5.mlp.3.weight",
+        "net.blocks.5.norm1.bias",
+        "net.blocks.5.norm1.weight",
+        "net.blocks.5.norm2.bias",
+        "net.blocks.5.norm2.weight",
+        "net.blocks.6.adaLN_modulation.1.bias",
+        "net.blocks.6.adaLN_modulation.1.weight",
+        "net.blocks.6.attn.in_proj_bias",
+        "net.blocks.6.attn.in_proj_weight",
+        "net.blocks.6.attn.out_proj.bias",
+        "net.blocks.6.attn.out_proj.weight",
+        "net.blocks.6.mlp.0.bias",
+        "net.blocks.6.mlp.0.weight",
+        "net.blocks.6.mlp.3.bias",
+        "net.blocks.6.mlp.3.weight",
+        "net.blocks.6.norm1.bias",
+        "net.blocks.6.norm1.weight",
+        "net.blocks.6.norm2.bias",
+        "net.blocks.6.norm2.weight",
+        "net.blocks.7.adaLN_modulation.1.bias",
+        "net.blocks.7.adaLN_modulation.1.weight",
+        "net.blocks.7.attn.in_proj_bias",
+        "net.blocks.7.attn.in_proj_weight",
+        "net.blocks.7.attn.out_proj.bias",
+        "net.blocks.7.attn.out_proj.weight",
+        "net.blocks.7.mlp.0.bias",
+        "net.blocks.7.mlp.0.weight",
+        "net.blocks.7.mlp.3.bias",
+        "net.blocks.7.mlp.3.weight",
+        "net.blocks.7.norm1.bias",
+        "net.blocks.7.norm1.weight",
+        "net.blocks.7.norm2.bias",
+        "net.blocks.7.norm2.weight",
+        "net.blocks.8.adaLN_modulation.1.bias",
+        "net.blocks.8.adaLN_modulation.1.weight",
+        "net.blocks.8.attn.in_proj_bias",
+        "net.blocks.8.attn.in_proj_weight",
+        "net.blocks.8.attn.out_proj.bias",
+        "net.blocks.8.attn.out_proj.weight",
+        "net.blocks.8.mlp.0.bias",
+        "net.blocks.8.mlp.0.weight",
+        "net.blocks.8.mlp.3.bias",
+        "net.blocks.8.mlp.3.weight",
+        "net.blocks.8.norm1.bias",
+        "net.blocks.8.norm1.weight",
+        "net.blocks.8.norm2.bias",
+        "net.blocks.8.norm2.weight",
+        "net.blocks.9.adaLN_modulation.1.bias",
+        "net.blocks.9.adaLN_modulation.1.weight",
+        "net.blocks.9.attn.in_proj_bias",
+        "net.blocks.9.attn.in_proj_weight",
+        "net.blocks.9.attn.out_proj.bias",
+        "net.blocks.9.attn.out_proj.weight",
+        "net.blocks.9.mlp.0.bias",
+        "net.blocks.9.mlp.0.weight",
+        "net.blocks.9.mlp.3.bias",
+        "net.blocks.9.mlp.3.weight",
+        "net.blocks.9.norm1.bias",
+        "net.blocks.9.norm1.weight",
+        "net.blocks.9.norm2.bias",
+        "net.blocks.9.norm2.weight",
+        "net.final_layer.modulation.1.bias",
+        "net.final_layer.modulation.1.weight",
+        "net.final_layer.norm.bias",
+        "net.final_layer.norm.weight",
+        "net.final_layer.proj.bias",
+        "net.final_layer.proj.weight",
+        "net.patch_embed.bias",
+        "net.patch_embed.weight",
+        "net.pos_embed",
+        "net.t_embedder.mlp.0.bias",
+        "net.t_embedder.mlp.0.weight",
+        "net.t_embedder.mlp.2.bias",
+        "net.t_embedder.mlp.2.weight",
+        "net.y_embedder.embedding_table.weight"
+      ],
+      "sha256": "7ee202b4beec1cd0f2506d9ec2f68640d5a8d1eee2ecb4ec8d707bf5a3f97cc7"
+    },
+    "ema1": {
+      "keys": [
+        "net.blocks.0.adaLN_modulation.1.bias",
+        "net.blocks.0.adaLN_modulation.1.weight",
+        "net.blocks.0.attn.in_proj_bias",
+        "net.blocks.0.attn.in_proj_weight",
+        "net.blocks.0.attn.out_proj.bias",
+        "net.blocks.0.attn.out_proj.weight",
+        "net.blocks.0.mlp.0.bias",
+        "net.blocks.0.mlp.0.weight",
+        "net.blocks.0.mlp.3.bias",
+        "net.blocks.0.mlp.3.weight",
+        "net.blocks.0.norm1.bias",
+        "net.blocks.0.norm1.weight",
+        "net.blocks.0.norm2.bias",
+        "net.blocks.0.norm2.weight",
+        "net.blocks.1.adaLN_modulation.1.bias",
+        "net.blocks.1.adaLN_modulation.1.weight",
+        "net.blocks.1.attn.in_proj_bias",
+        "net.blocks.1.attn.in_proj_weight",
+        "net.blocks.1.attn.out_proj.bias",
+        "net.blocks.1.attn.out_proj.weight",
+        "net.blocks.1.mlp.0.bias",
+        "net.blocks.1.mlp.0.weight",
+        "net.blocks.1.mlp.3.bias",
+        "net.blocks.1.mlp.3.weight",
+        "net.blocks.1.norm1.bias",
+        "net.blocks.1.norm1.weight",
+        "net.blocks.1.norm2.bias",
+        "net.blocks.1.norm2.weight",
+        "net.blocks.10.adaLN_modulation.1.bias",
+        "net.blocks.10.adaLN_modulation.1.weight",
+        "net.blocks.10.attn.in_proj_bias",
+        "net.blocks.10.attn.in_proj_weight",
+        "net.blocks.10.attn.out_proj.bias",
+        "net.blocks.10.attn.out_proj.weight",
+        "net.blocks.10.mlp.0.bias",
+        "net.blocks.10.mlp.0.weight",
+        "net.blocks.10.mlp.3.bias",
+        "net.blocks.10.mlp.3.weight",
+        "net.blocks.10.norm1.bias",
+        "net.blocks.10.norm1.weight",
+        "net.blocks.10.norm2.bias",
+        "net.blocks.10.norm2.weight",
+        "net.blocks.11.adaLN_modulation.1.bias",
+        "net.blocks.11.adaLN_modulation.1.weight",
+        "net.blocks.11.attn.in_proj_bias",
+        "net.blocks.11.attn.in_proj_weight",
+        "net.blocks.11.attn.out_proj.bias",
+        "net.blocks.11.attn.out_proj.weight",
+        "net.blocks.11.mlp.0.bias",
+        "net.blocks.11.mlp.0.weight",
+        "net.blocks.11.mlp.3.bias",
+        "net.blocks.11.mlp.3.weight",
+        "net.blocks.11.norm1.bias",
+        "net.blocks.11.norm1.weight",
+        "net.blocks.11.norm2.bias",
+        "net.blocks.11.norm2.weight",
+        "net.blocks.2.adaLN_modulation.1.bias",
+        "net.blocks.2.adaLN_modulation.1.weight",
+        "net.blocks.2.attn.in_proj_bias",
+        "net.blocks.2.attn.in_proj_weight",
+        "net.blocks.2.attn.out_proj.bias",
+        "net.blocks.2.attn.out_proj.weight",
+        "net.blocks.2.mlp.0.bias",
+        "net.blocks.2.mlp.0.weight",
+        "net.blocks.2.mlp.3.bias",
+        "net.blocks.2.mlp.3.weight",
+        "net.blocks.2.norm1.bias",
+        "net.blocks.2.norm1.weight",
+        "net.blocks.2.norm2.bias",
+        "net.blocks.2.norm2.weight",
+        "net.blocks.3.adaLN_modulation.1.bias",
+        "net.blocks.3.adaLN_modulation.1.weight",
+        "net.blocks.3.attn.in_proj_bias",
+        "net.blocks.3.attn.in_proj_weight",
+        "net.blocks.3.attn.out_proj.bias",
+        "net.blocks.3.attn.out_proj.weight",
+        "net.blocks.3.mlp.0.bias",
+        "net.blocks.3.mlp.0.weight",
+        "net.blocks.3.mlp.3.bias",
+        "net.blocks.3.mlp.3.weight",
+        "net.blocks.3.norm1.bias",
+        "net.blocks.3.norm1.weight",
+        "net.blocks.3.norm2.bias",
+        "net.blocks.3.norm2.weight",
+        "net.blocks.4.adaLN_modulation.1.bias",
+        "net.blocks.4.adaLN_modulation.1.weight",
+        "net.blocks.4.attn.in_proj_bias",
+        "net.blocks.4.attn.in_proj_weight",
+        "net.blocks.4.attn.out_proj.bias",
+        "net.blocks.4.attn.out_proj.weight",
+        "net.blocks.4.mlp.0.bias",
+        "net.blocks.4.mlp.0.weight",
+        "net.blocks.4.mlp.3.bias",
+        "net.blocks.4.mlp.3.weight",
+        "net.blocks.4.norm1.bias",
+        "net.blocks.4.norm1.weight",
+        "net.blocks.4.norm2.bias",
+        "net.blocks.4.norm2.weight",
+        "net.blocks.5.adaLN_modulation.1.bias",
+        "net.blocks.5.adaLN_modulation.1.weight",
+        "net.blocks.5.attn.in_proj_bias",
+        "net.blocks.5.attn.in_proj_weight",
+        "net.blocks.5.attn.out_proj.bias",
+        "net.blocks.5.attn.out_proj.weight",
+        "net.blocks.5.mlp.0.bias",
+        "net.blocks.5.mlp.0.weight",
+        "net.blocks.5.mlp.3.bias",
+        "net.blocks.5.mlp.3.weight",
+        "net.blocks.5.norm1.bias",
+        "net.blocks.5.norm1.weight",
+        "net.blocks.5.norm2.bias",
+        "net.blocks.5.norm2.weight",
+        "net.blocks.6.adaLN_modulation.1.bias",
+        "net.blocks.6.adaLN_modulation.1.weight",
+        "net.blocks.6.attn.in_proj_bias",
+        "net.blocks.6.attn.in_proj_weight",
+        "net.blocks.6.attn.out_proj.bias",
+        "net.blocks.6.attn.out_proj.weight",
+        "net.blocks.6.mlp.0.bias",
+        "net.blocks.6.mlp.0.weight",
+        "net.blocks.6.mlp.3.bias",
+        "net.blocks.6.mlp.3.weight",
+        "net.blocks.6.norm1.bias",
+        "net.blocks.6.norm1.weight",
+        "net.blocks.6.norm2.bias",
+        "net.blocks.6.norm2.weight",
+        "net.blocks.7.adaLN_modulation.1.bias",
+        "net.blocks.7.adaLN_modulation.1.weight",
+        "net.blocks.7.attn.in_proj_bias",
+        "net.blocks.7.attn.in_proj_weight",
+        "net.blocks.7.attn.out_proj.bias",
+        "net.blocks.7.attn.out_proj.weight",
+        "net.blocks.7.mlp.0.bias",
+        "net.blocks.7.mlp.0.weight",
+        "net.blocks.7.mlp.3.bias",
+        "net.blocks.7.mlp.3.weight",
+        "net.blocks.7.norm1.bias",
+        "net.blocks.7.norm1.weight",
+        "net.blocks.7.norm2.bias",
+        "net.blocks.7.norm2.weight",
+        "net.blocks.8.adaLN_modulation.1.bias",
+        "net.blocks.8.adaLN_modulation.1.weight",
+        "net.blocks.8.attn.in_proj_bias",
+        "net.blocks.8.attn.in_proj_weight",
+        "net.blocks.8.attn.out_proj.bias",
+        "net.blocks.8.attn.out_proj.weight",
+        "net.blocks.8.mlp.0.bias",
+        "net.blocks.8.mlp.0.weight",
+        "net.blocks.8.mlp.3.bias",
+        "net.blocks.8.mlp.3.weight",
+        "net.blocks.8.norm1.bias",
+        "net.blocks.8.norm1.weight",
+        "net.blocks.8.norm2.bias",
+        "net.blocks.8.norm2.weight",
+        "net.blocks.9.adaLN_modulation.1.bias",
+        "net.blocks.9.adaLN_modulation.1.weight",
+        "net.blocks.9.attn.in_proj_bias",
+        "net.blocks.9.attn.in_proj_weight",
+        "net.blocks.9.attn.out_proj.bias",
+        "net.blocks.9.attn.out_proj.weight",
+        "net.blocks.9.mlp.0.bias",
+        "net.blocks.9.mlp.0.weight",
+        "net.blocks.9.mlp.3.bias",
+        "net.blocks.9.mlp.3.weight",
+        "net.blocks.9.norm1.bias",
+        "net.blocks.9.norm1.weight",
+        "net.blocks.9.norm2.bias",
+        "net.blocks.9.norm2.weight",
+        "net.final_layer.modulation.1.bias",
+        "net.final_layer.modulation.1.weight",
+        "net.final_layer.norm.bias",
+        "net.final_layer.norm.weight",
+        "net.final_layer.proj.bias",
+        "net.final_layer.proj.weight",
+        "net.patch_embed.bias",
+        "net.patch_embed.weight",
+        "net.pos_embed",
+        "net.t_embedder.mlp.0.bias",
+        "net.t_embedder.mlp.0.weight",
+        "net.t_embedder.mlp.2.bias",
+        "net.t_embedder.mlp.2.weight",
+        "net.y_embedder.embedding_table.weight"
+      ],
+      "sha256": "dd7a4b2d1465c4941a788f6e98a6a38958ae3154571cc9411ae0a809a0c9cfe0"
+    },
+    "ema2": {
+      "keys": [
+        "net.blocks.0.adaLN_modulation.1.bias",
+        "net.blocks.0.adaLN_modulation.1.weight",
+        "net.blocks.0.attn.in_proj_bias",
+        "net.blocks.0.attn.in_proj_weight",
+        "net.blocks.0.attn.out_proj.bias",
+        "net.blocks.0.attn.out_proj.weight",
+        "net.blocks.0.mlp.0.bias",
+        "net.blocks.0.mlp.0.weight",
+        "net.blocks.0.mlp.3.bias",
+        "net.blocks.0.mlp.3.weight",
+        "net.blocks.0.norm1.bias",
+        "net.blocks.0.norm1.weight",
+        "net.blocks.0.norm2.bias",
+        "net.blocks.0.norm2.weight",
+        "net.blocks.1.adaLN_modulation.1.bias",
+        "net.blocks.1.adaLN_modulation.1.weight",
+        "net.blocks.1.attn.in_proj_bias",
+        "net.blocks.1.attn.in_proj_weight",
+        "net.blocks.1.attn.out_proj.bias",
+        "net.blocks.1.attn.out_proj.weight",
+        "net.blocks.1.mlp.0.bias",
+        "net.blocks.1.mlp.0.weight",
+        "net.blocks.1.mlp.3.bias",
+        "net.blocks.1.mlp.3.weight",
+        "net.blocks.1.norm1.bias",
+        "net.blocks.1.norm1.weight",
+        "net.blocks.1.norm2.bias",
+        "net.blocks.1.norm2.weight",
+        "net.blocks.10.adaLN_modulation.1.bias",
+        "net.blocks.10.adaLN_modulation.1.weight",
+        "net.blocks.10.attn.in_proj_bias",
+        "net.blocks.10.attn.in_proj_weight",
+        "net.blocks.10.attn.out_proj.bias",
+        "net.blocks.10.attn.out_proj.weight",
+        "net.blocks.10.mlp.0.bias",
+        "net.blocks.10.mlp.0.weight",
+        "net.blocks.10.mlp.3.bias",
+        "net.blocks.10.mlp.3.weight",
+        "net.blocks.10.norm1.bias",
+        "net.blocks.10.norm1.weight",
+        "net.blocks.10.norm2.bias",
+        "net.blocks.10.norm2.weight",
+        "net.blocks.11.adaLN_modulation.1.bias",
+        "net.blocks.11.adaLN_modulation.1.weight",
+        "net.blocks.11.attn.in_proj_bias",
+        "net.blocks.11.attn.in_proj_weight",
+        "net.blocks.11.attn.out_proj.bias",
+        "net.blocks.11.attn.out_proj.weight",
+        "net.blocks.11.mlp.0.bias",
+        "net.blocks.11.mlp.0.weight",
+        "net.blocks.11.mlp.3.bias",
+        "net.blocks.11.mlp.3.weight",
+        "net.blocks.11.norm1.bias",
+        "net.blocks.11.norm1.weight",
+        "net.blocks.11.norm2.bias",
+        "net.blocks.11.norm2.weight",
+        "net.blocks.2.adaLN_modulation.1.bias",
+        "net.blocks.2.adaLN_modulation.1.weight",
+        "net.blocks.2.attn.in_proj_bias",
+        "net.blocks.2.attn.in_proj_weight",
+        "net.blocks.2.attn.out_proj.bias",
+        "net.blocks.2.attn.out_proj.weight",
+        "net.blocks.2.mlp.0.bias",
+        "net.blocks.2.mlp.0.weight",
+        "net.blocks.2.mlp.3.bias",
+        "net.blocks.2.mlp.3.weight",
+        "net.blocks.2.norm1.bias",
+        "net.blocks.2.norm1.weight",
+        "net.blocks.2.norm2.bias",
+        "net.blocks.2.norm2.weight",
+        "net.blocks.3.adaLN_modulation.1.bias",
+        "net.blocks.3.adaLN_modulation.1.weight",
+        "net.blocks.3.attn.in_proj_bias",
+        "net.blocks.3.attn.in_proj_weight",
+        "net.blocks.3.attn.out_proj.bias",
+        "net.blocks.3.attn.out_proj.weight",
+        "net.blocks.3.mlp.0.bias",
+        "net.blocks.3.mlp.0.weight",
+        "net.blocks.3.mlp.3.bias",
+        "net.blocks.3.mlp.3.weight",
+        "net.blocks.3.norm1.bias",
+        "net.blocks.3.norm1.weight",
+        "net.blocks.3.norm2.bias",
+        "net.blocks.3.norm2.weight",
+        "net.blocks.4.adaLN_modulation.1.bias",
+        "net.blocks.4.adaLN_modulation.1.weight",
+        "net.blocks.4.attn.in_proj_bias",
+        "net.blocks.4.attn.in_proj_weight",
+        "net.blocks.4.attn.out_proj.bias",
+        "net.blocks.4.attn.out_proj.weight",
+        "net.blocks.4.mlp.0.bias",
+        "net.blocks.4.mlp.0.weight",
+        "net.blocks.4.mlp.3.bias",
+        "net.blocks.4.mlp.3.weight",
+        "net.blocks.4.norm1.bias",
+        "net.blocks.4.norm1.weight",
+        "net.blocks.4.norm2.bias",
+        "net.blocks.4.norm2.weight",
+        "net.blocks.5.adaLN_modulation.1.bias",
+        "net.blocks.5.adaLN_modulation.1.weight",
+        "net.blocks.5.attn.in_proj_bias",
+        "net.blocks.5.attn.in_proj_weight",
+        "net.blocks.5.attn.out_proj.bias",
+        "net.blocks.5.attn.out_proj.weight",
+        "net.blocks.5.mlp.0.bias",
+        "net.blocks.5.mlp.0.weight",
+        "net.blocks.5.mlp.3.bias",
+        "net.blocks.5.mlp.3.weight",
+        "net.blocks.5.norm1.bias",
+        "net.blocks.5.norm1.weight",
+        "net.blocks.5.norm2.bias",
+        "net.blocks.5.norm2.weight",
+        "net.blocks.6.adaLN_modulation.1.bias",
+        "net.blocks.6.adaLN_modulation.1.weight",
+        "net.blocks.6.attn.in_proj_bias",
+        "net.blocks.6.attn.in_proj_weight",
+        "net.blocks.6.attn.out_proj.bias",
+        "net.blocks.6.attn.out_proj.weight",
+        "net.blocks.6.mlp.0.bias",
+        "net.blocks.6.mlp.0.weight",
+        "net.blocks.6.mlp.3.bias",
+        "net.blocks.6.mlp.3.weight",
+        "net.blocks.6.norm1.bias",
+        "net.blocks.6.norm1.weight",
+        "net.blocks.6.norm2.bias",
+        "net.blocks.6.norm2.weight",
+        "net.blocks.7.adaLN_modulation.1.bias",
+        "net.blocks.7.adaLN_modulation.1.weight",
+        "net.blocks.7.attn.in_proj_bias",
+        "net.blocks.7.attn.in_proj_weight",
+        "net.blocks.7.attn.out_proj.bias",
+        "net.blocks.7.attn.out_proj.weight",
+        "net.blocks.7.mlp.0.bias",
+        "net.blocks.7.mlp.0.weight",
+        "net.blocks.7.mlp.3.bias",
+        "net.blocks.7.mlp.3.weight",
+        "net.blocks.7.norm1.bias",
+        "net.blocks.7.norm1.weight",
+        "net.blocks.7.norm2.bias",
+        "net.blocks.7.norm2.weight",
+        "net.blocks.8.adaLN_modulation.1.bias",
+        "net.blocks.8.adaLN_modulation.1.weight",
+        "net.blocks.8.attn.in_proj_bias",
+        "net.blocks.8.attn.in_proj_weight",
+        "net.blocks.8.attn.out_proj.bias",
+        "net.blocks.8.attn.out_proj.weight",
+        "net.blocks.8.mlp.0.bias",
+        "net.blocks.8.mlp.0.weight",
+        "net.blocks.8.mlp.3.bias",
+        "net.blocks.8.mlp.3.weight",
+        "net.blocks.8.norm1.bias",
+        "net.blocks.8.norm1.weight",
+        "net.blocks.8.norm2.bias",
+        "net.blocks.8.norm2.weight",
+        "net.blocks.9.adaLN_modulation.1.bias",
+        "net.blocks.9.adaLN_modulation.1.weight",
+        "net.blocks.9.attn.in_proj_bias",
+        "net.blocks.9.attn.in_proj_weight",
+        "net.blocks.9.attn.out_proj.bias",
+        "net.blocks.9.attn.out_proj.weight",
+        "net.blocks.9.mlp.0.bias",
+        "net.blocks.9.mlp.0.weight",
+        "net.blocks.9.mlp.3.bias",
+        "net.blocks.9.mlp.3.weight",
+        "net.blocks.9.norm1.bias",
+        "net.blocks.9.norm1.weight",
+        "net.blocks.9.norm2.bias",
+        "net.blocks.9.norm2.weight",
+        "net.final_layer.modulation.1.bias",
+        "net.final_layer.modulation.1.weight",
+        "net.final_layer.norm.bias",
+        "net.final_layer.norm.weight",
+        "net.final_layer.proj.bias",
+        "net.final_layer.proj.weight",
+        "net.patch_embed.bias",
+        "net.patch_embed.weight",
+        "net.pos_embed",
+        "net.t_embedder.mlp.0.bias",
+        "net.t_embedder.mlp.0.weight",
+        "net.t_embedder.mlp.2.bias",
+        "net.t_embedder.mlp.2.weight",
+        "net.y_embedder.embedding_table.weight"
+      ],
+      "sha256": "995935d6bec29266cc2cc24e33cbfc83be911c1a0fbc44952dddd28212d84886"
+    }
+  },
+  "state_after": {
+    "model": {
+      "keys": [
+        "net.blocks.0.adaLN_modulation.1.bias",
+        "net.blocks.0.adaLN_modulation.1.weight",
+        "net.blocks.0.attn.in_proj_bias",
+        "net.blocks.0.attn.in_proj_weight",
+        "net.blocks.0.attn.out_proj.bias",
+        "net.blocks.0.attn.out_proj.weight",
+        "net.blocks.0.mlp.0.bias",
+        "net.blocks.0.mlp.0.weight",
+        "net.blocks.0.mlp.3.bias",
+        "net.blocks.0.mlp.3.weight",
+        "net.blocks.0.norm1.bias",
+        "net.blocks.0.norm1.weight",
+        "net.blocks.0.norm2.bias",
+        "net.blocks.0.norm2.weight",
+        "net.blocks.1.adaLN_modulation.1.bias",
+        "net.blocks.1.adaLN_modulation.1.weight",
+        "net.blocks.1.attn.in_proj_bias",
+        "net.blocks.1.attn.in_proj_weight",
+        "net.blocks.1.attn.out_proj.bias",
+        "net.blocks.1.attn.out_proj.weight",
+        "net.blocks.1.mlp.0.bias",
+        "net.blocks.1.mlp.0.weight",
+        "net.blocks.1.mlp.3.bias",
+        "net.blocks.1.mlp.3.weight",
+        "net.blocks.1.norm1.bias",
+        "net.blocks.1.norm1.weight",
+        "net.blocks.1.norm2.bias",
+        "net.blocks.1.norm2.weight",
+        "net.blocks.10.adaLN_modulation.1.bias",
+        "net.blocks.10.adaLN_modulation.1.weight",
+        "net.blocks.10.attn.in_proj_bias",
+        "net.blocks.10.attn.in_proj_weight",
+        "net.blocks.10.attn.out_proj.bias",
+        "net.blocks.10.attn.out_proj.weight",
+        "net.blocks.10.mlp.0.bias",
+        "net.blocks.10.mlp.0.weight",
+        "net.blocks.10.mlp.3.bias",
+        "net.blocks.10.mlp.3.weight",
+        "net.blocks.10.norm1.bias",
+        "net.blocks.10.norm1.weight",
+        "net.blocks.10.norm2.bias",
+        "net.blocks.10.norm2.weight",
+        "net.blocks.11.adaLN_modulation.1.bias",
+        "net.blocks.11.adaLN_modulation.1.weight",
+        "net.blocks.11.attn.in_proj_bias",
+        "net.blocks.11.attn.in_proj_weight",
+        "net.blocks.11.attn.out_proj.bias",
+        "net.blocks.11.attn.out_proj.weight",
+        "net.blocks.11.mlp.0.bias",
+        "net.blocks.11.mlp.0.weight",
+        "net.blocks.11.mlp.3.bias",
+        "net.blocks.11.mlp.3.weight",
+        "net.blocks.11.norm1.bias",
+        "net.blocks.11.norm1.weight",
+        "net.blocks.11.norm2.bias",
+        "net.blocks.11.norm2.weight",
+        "net.blocks.2.adaLN_modulation.1.bias",
+        "net.blocks.2.adaLN_modulation.1.weight",
+        "net.blocks.2.attn.in_proj_bias",
+        "net.blocks.2.attn.in_proj_weight",
+        "net.blocks.2.attn.out_proj.bias",
+        "net.blocks.2.attn.out_proj.weight",
+        "net.blocks.2.mlp.0.bias",
+        "net.blocks.2.mlp.0.weight",
+        "net.blocks.2.mlp.3.bias",
+        "net.blocks.2.mlp.3.weight",
+        "net.blocks.2.norm1.bias",
+        "net.blocks.2.norm1.weight",
+        "net.blocks.2.norm2.bias",
+        "net.blocks.2.norm2.weight",
+        "net.blocks.3.adaLN_modulation.1.bias",
+        "net.blocks.3.adaLN_modulation.1.weight",
+        "net.blocks.3.attn.in_proj_bias",
+        "net.blocks.3.attn.in_proj_weight",
+        "net.blocks.3.attn.out_proj.bias",
+        "net.blocks.3.attn.out_proj.weight",
+        "net.blocks.3.mlp.0.bias",
+        "net.blocks.3.mlp.0.weight",
+        "net.blocks.3.mlp.3.bias",
+        "net.blocks.3.mlp.3.weight",
+        "net.blocks.3.norm1.bias",
+        "net.blocks.3.norm1.weight",
+        "net.blocks.3.norm2.bias",
+        "net.blocks.3.norm2.weight",
+        "net.blocks.4.adaLN_modulation.1.bias",
+        "net.blocks.4.adaLN_modulation.1.weight",
+        "net.blocks.4.attn.in_proj_bias",
+        "net.blocks.4.attn.in_proj_weight",
+        "net.blocks.4.attn.out_proj.bias",
+        "net.blocks.4.attn.out_proj.weight",
+        "net.blocks.4.mlp.0.bias",
+        "net.blocks.4.mlp.0.weight",
+        "net.blocks.4.mlp.3.bias",
+        "net.blocks.4.mlp.3.weight",
+        "net.blocks.4.norm1.bias",
+        "net.blocks.4.norm1.weight",
+        "net.blocks.4.norm2.bias",
+        "net.blocks.4.norm2.weight",
+        "net.blocks.5.adaLN_modulation.1.bias",
+        "net.blocks.5.adaLN_modulation.1.weight",
+        "net.blocks.5.attn.in_proj_bias",
+        "net.blocks.5.attn.in_proj_weight",
+        "net.blocks.5.attn.out_proj.bias",
+        "net.blocks.5.attn.out_proj.weight",
+        "net.blocks.5.mlp.0.bias",
+        "net.blocks.5.mlp.0.weight",
+        "net.blocks.5.mlp.3.bias",
+        "net.blocks.5.mlp.3.weight",
+        "net.blocks.5.norm1.bias",
+        "net.blocks.5.norm1.weight",
+        "net.blocks.5.norm2.bias",
+        "net.blocks.5.norm2.weight",
+        "net.blocks.6.adaLN_modulation.1.bias",
+        "net.blocks.6.adaLN_modulation.1.weight",
+        "net.blocks.6.attn.in_proj_bias",
+        "net.blocks.6.attn.in_proj_weight",
+        "net.blocks.6.attn.out_proj.bias",
+        "net.blocks.6.attn.out_proj.weight",
+        "net.blocks.6.mlp.0.bias",
+        "net.blocks.6.mlp.0.weight",
+        "net.blocks.6.mlp.3.bias",
+        "net.blocks.6.mlp.3.weight",
+        "net.blocks.6.norm1.bias",
+        "net.blocks.6.norm1.weight",
+        "net.blocks.6.norm2.bias",
+        "net.blocks.6.norm2.weight",
+        "net.blocks.7.adaLN_modulation.1.bias",
+        "net.blocks.7.adaLN_modulation.1.weight",
+        "net.blocks.7.attn.in_proj_bias",
+        "net.blocks.7.attn.in_proj_weight",
+        "net.blocks.7.attn.out_proj.bias",
+        "net.blocks.7.attn.out_proj.weight",
+        "net.blocks.7.mlp.0.bias",
+        "net.blocks.7.mlp.0.weight",
+        "net.blocks.7.mlp.3.bias",
+        "net.blocks.7.mlp.3.weight",
+        "net.blocks.7.norm1.bias",
+        "net.blocks.7.norm1.weight",
+        "net.blocks.7.norm2.bias",
+        "net.blocks.7.norm2.weight",
+        "net.blocks.8.adaLN_modulation.1.bias",
+        "net.blocks.8.adaLN_modulation.1.weight",
+        "net.blocks.8.attn.in_proj_bias",
+        "net.blocks.8.attn.in_proj_weight",
+        "net.blocks.8.attn.out_proj.bias",
+        "net.blocks.8.attn.out_proj.weight",
+        "net.blocks.8.mlp.0.bias",
+        "net.blocks.8.mlp.0.weight",
+        "net.blocks.8.mlp.3.bias",
+        "net.blocks.8.mlp.3.weight",
+        "net.blocks.8.norm1.bias",
+        "net.blocks.8.norm1.weight",
+        "net.blocks.8.norm2.bias",
+        "net.blocks.8.norm2.weight",
+        "net.blocks.9.adaLN_modulation.1.bias",
+        "net.blocks.9.adaLN_modulation.1.weight",
+        "net.blocks.9.attn.in_proj_bias",
+        "net.blocks.9.attn.in_proj_weight",
+        "net.blocks.9.attn.out_proj.bias",
+        "net.blocks.9.attn.out_proj.weight",
+        "net.blocks.9.mlp.0.bias",
+        "net.blocks.9.mlp.0.weight",
+        "net.blocks.9.mlp.3.bias",
+        "net.blocks.9.mlp.3.weight",
+        "net.blocks.9.norm1.bias",
+        "net.blocks.9.norm1.weight",
+        "net.blocks.9.norm2.bias",
+        "net.blocks.9.norm2.weight",
+        "net.final_layer.modulation.1.bias",
+        "net.final_layer.modulation.1.weight",
+        "net.final_layer.norm.bias",
+        "net.final_layer.norm.weight",
+        "net.final_layer.proj.bias",
+        "net.final_layer.proj.weight",
+        "net.patch_embed.bias",
+        "net.patch_embed.weight",
+        "net.pos_embed",
+        "net.t_embedder.mlp.0.bias",
+        "net.t_embedder.mlp.0.weight",
+        "net.t_embedder.mlp.2.bias",
+        "net.t_embedder.mlp.2.weight",
+        "net.y_embedder.embedding_table.weight"
+      ],
+      "sha256": "7ee202b4beec1cd0f2506d9ec2f68640d5a8d1eee2ecb4ec8d707bf5a3f97cc7"
+    },
+    "ema1": {
+      "keys": [
+        "net.blocks.0.adaLN_modulation.1.bias",
+        "net.blocks.0.adaLN_modulation.1.weight",
+        "net.blocks.0.attn.in_proj_bias",
+        "net.blocks.0.attn.in_proj_weight",
+        "net.blocks.0.attn.out_proj.bias",
+        "net.blocks.0.attn.out_proj.weight",
+        "net.blocks.0.mlp.0.bias",
+        "net.blocks.0.mlp.0.weight",
+        "net.blocks.0.mlp.3.bias",
+        "net.blocks.0.mlp.3.weight",
+        "net.blocks.0.norm1.bias",
+        "net.blocks.0.norm1.weight",
+        "net.blocks.0.norm2.bias",
+        "net.blocks.0.norm2.weight",
+        "net.blocks.1.adaLN_modulation.1.bias",
+        "net.blocks.1.adaLN_modulation.1.weight",
+        "net.blocks.1.attn.in_proj_bias",
+        "net.blocks.1.attn.in_proj_weight",
+        "net.blocks.1.attn.out_proj.bias",
+        "net.blocks.1.attn.out_proj.weight",
+        "net.blocks.1.mlp.0.bias",
+        "net.blocks.1.mlp.0.weight",
+        "net.blocks.1.mlp.3.bias",
+        "net.blocks.1.mlp.3.weight",
+        "net.blocks.1.norm1.bias",
+        "net.blocks.1.norm1.weight",
+        "net.blocks.1.norm2.bias",
+        "net.blocks.1.norm2.weight",
+        "net.blocks.10.adaLN_modulation.1.bias",
+        "net.blocks.10.adaLN_modulation.1.weight",
+        "net.blocks.10.attn.in_proj_bias",
+        "net.blocks.10.attn.in_proj_weight",
+        "net.blocks.10.attn.out_proj.bias",
+        "net.blocks.10.attn.out_proj.weight",
+        "net.blocks.10.mlp.0.bias",
+        "net.blocks.10.mlp.0.weight",
+        "net.blocks.10.mlp.3.bias",
+        "net.blocks.10.mlp.3.weight",
+        "net.blocks.10.norm1.bias",
+        "net.blocks.10.norm1.weight",
+        "net.blocks.10.norm2.bias",
+        "net.blocks.10.norm2.weight",
+        "net.blocks.11.adaLN_modulation.1.bias",
+        "net.blocks.11.adaLN_modulation.1.weight",
+        "net.blocks.11.attn.in_proj_bias",
+        "net.blocks.11.attn.in_proj_weight",
+        "net.blocks.11.attn.out_proj.bias",
+        "net.blocks.11.attn.out_proj.weight",
+        "net.blocks.11.mlp.0.bias",
+        "net.blocks.11.mlp.0.weight",
+        "net.blocks.11.mlp.3.bias",
+        "net.blocks.11.mlp.3.weight",
+        "net.blocks.11.norm1.bias",
+        "net.blocks.11.norm1.weight",
+        "net.blocks.11.norm2.bias",
+        "net.blocks.11.norm2.weight",
+        "net.blocks.2.adaLN_modulation.1.bias",
+        "net.blocks.2.adaLN_modulation.1.weight",
+        "net.blocks.2.attn.in_proj_bias",
+        "net.blocks.2.attn.in_proj_weight",
+        "net.blocks.2.attn.out_proj.bias",
+        "net.blocks.2.attn.out_proj.weight",
+        "net.blocks.2.mlp.0.bias",
+        "net.blocks.2.mlp.0.weight",
+        "net.blocks.2.mlp.3.bias",
+        "net.blocks.2.mlp.3.weight",
+        "net.blocks.2.norm1.bias",
+        "net.blocks.2.norm1.weight",
+        "net.blocks.2.norm2.bias",
+        "net.blocks.2.norm2.weight",
+        "net.blocks.3.adaLN_modulation.1.bias",
+        "net.blocks.3.adaLN_modulation.1.weight",
+        "net.blocks.3.attn.in_proj_bias",
+        "net.blocks.3.attn.in_proj_weight",
+        "net.blocks.3.attn.out_proj.bias",
+        "net.blocks.3.attn.out_proj.weight",
+        "net.blocks.3.mlp.0.bias",
+        "net.blocks.3.mlp.0.weight",
+        "net.blocks.3.mlp.3.bias",
+        "net.blocks.3.mlp.3.weight",
+        "net.blocks.3.norm1.bias",
+        "net.blocks.3.norm1.weight",
+        "net.blocks.3.norm2.bias",
+        "net.blocks.3.norm2.weight",
+        "net.blocks.4.adaLN_modulation.1.bias",
+        "net.blocks.4.adaLN_modulation.1.weight",
+        "net.blocks.4.attn.in_proj_bias",
+        "net.blocks.4.attn.in_proj_weight",
+        "net.blocks.4.attn.out_proj.bias",
+        "net.blocks.4.attn.out_proj.weight",
+        "net.blocks.4.mlp.0.bias",
+        "net.blocks.4.mlp.0.weight",
+        "net.blocks.4.mlp.3.bias",
+        "net.blocks.4.mlp.3.weight",
+        "net.blocks.4.norm1.bias",
+        "net.blocks.4.norm1.weight",
+        "net.blocks.4.norm2.bias",
+        "net.blocks.4.norm2.weight",
+        "net.blocks.5.adaLN_modulation.1.bias",
+        "net.blocks.5.adaLN_modulation.1.weight",
+        "net.blocks.5.attn.in_proj_bias",
+        "net.blocks.5.attn.in_proj_weight",
+        "net.blocks.5.attn.out_proj.bias",
+        "net.blocks.5.attn.out_proj.weight",
+        "net.blocks.5.mlp.0.bias",
+        "net.blocks.5.mlp.0.weight",
+        "net.blocks.5.mlp.3.bias",
+        "net.blocks.5.mlp.3.weight",
+        "net.blocks.5.norm1.bias",
+        "net.blocks.5.norm1.weight",
+        "net.blocks.5.norm2.bias",
+        "net.blocks.5.norm2.weight",
+        "net.blocks.6.adaLN_modulation.1.bias",
+        "net.blocks.6.adaLN_modulation.1.weight",
+        "net.blocks.6.attn.in_proj_bias",
+        "net.blocks.6.attn.in_proj_weight",
+        "net.blocks.6.attn.out_proj.bias",
+        "net.blocks.6.attn.out_proj.weight",
+        "net.blocks.6.mlp.0.bias",
+        "net.blocks.6.mlp.0.weight",
+        "net.blocks.6.mlp.3.bias",
+        "net.blocks.6.mlp.3.weight",
+        "net.blocks.6.norm1.bias",
+        "net.blocks.6.norm1.weight",
+        "net.blocks.6.norm2.bias",
+        "net.blocks.6.norm2.weight",
+        "net.blocks.7.adaLN_modulation.1.bias",
+        "net.blocks.7.adaLN_modulation.1.weight",
+        "net.blocks.7.attn.in_proj_bias",
+        "net.blocks.7.attn.in_proj_weight",
+        "net.blocks.7.attn.out_proj.bias",
+        "net.blocks.7.attn.out_proj.weight",
+        "net.blocks.7.mlp.0.bias",
+        "net.blocks.7.mlp.0.weight",
+        "net.blocks.7.mlp.3.bias",
+        "net.blocks.7.mlp.3.weight",
+        "net.blocks.7.norm1.bias",
+        "net.blocks.7.norm1.weight",
+        "net.blocks.7.norm2.bias",
+        "net.blocks.7.norm2.weight",
+        "net.blocks.8.adaLN_modulation.1.bias",
+        "net.blocks.8.adaLN_modulation.1.weight",
+        "net.blocks.8.attn.in_proj_bias",
+        "net.blocks.8.attn.in_proj_weight",
+        "net.blocks.8.attn.out_proj.bias",
+        "net.blocks.8.attn.out_proj.weight",
+        "net.blocks.8.mlp.0.bias",
+        "net.blocks.8.mlp.0.weight",
+        "net.blocks.8.mlp.3.bias",
+        "net.blocks.8.mlp.3.weight",
+        "net.blocks.8.norm1.bias",
+        "net.blocks.8.norm1.weight",
+        "net.blocks.8.norm2.bias",
+        "net.blocks.8.norm2.weight",
+        "net.blocks.9.adaLN_modulation.1.bias",
+        "net.blocks.9.adaLN_modulation.1.weight",
+        "net.blocks.9.attn.in_proj_bias",
+        "net.blocks.9.attn.in_proj_weight",
+        "net.blocks.9.attn.out_proj.bias",
+        "net.blocks.9.attn.out_proj.weight",
+        "net.blocks.9.mlp.0.bias",
+        "net.blocks.9.mlp.0.weight",
+        "net.blocks.9.mlp.3.bias",
+        "net.blocks.9.mlp.3.weight",
+        "net.blocks.9.norm1.bias",
+        "net.blocks.9.norm1.weight",
+        "net.blocks.9.norm2.bias",
+        "net.blocks.9.norm2.weight",
+        "net.final_layer.modulation.1.bias",
+        "net.final_layer.modulation.1.weight",
+        "net.final_layer.norm.bias",
+        "net.final_layer.norm.weight",
+        "net.final_layer.proj.bias",
+        "net.final_layer.proj.weight",
+        "net.patch_embed.bias",
+        "net.patch_embed.weight",
+        "net.pos_embed",
+        "net.t_embedder.mlp.0.bias",
+        "net.t_embedder.mlp.0.weight",
+        "net.t_embedder.mlp.2.bias",
+        "net.t_embedder.mlp.2.weight",
+        "net.y_embedder.embedding_table.weight"
+      ],
+      "sha256": "dd7a4b2d1465c4941a788f6e98a6a38958ae3154571cc9411ae0a809a0c9cfe0"
+    },
+    "ema2": {
+      "keys": [
+        "net.blocks.0.adaLN_modulation.1.bias",
+        "net.blocks.0.adaLN_modulation.1.weight",
+        "net.blocks.0.attn.in_proj_bias",
+        "net.blocks.0.attn.in_proj_weight",
+        "net.blocks.0.attn.out_proj.bias",
+        "net.blocks.0.attn.out_proj.weight",
+        "net.blocks.0.mlp.0.bias",
+        "net.blocks.0.mlp.0.weight",
+        "net.blocks.0.mlp.3.bias",
+        "net.blocks.0.mlp.3.weight",
+        "net.blocks.0.norm1.bias",
+        "net.blocks.0.norm1.weight",
+        "net.blocks.0.norm2.bias",
+        "net.blocks.0.norm2.weight",
+        "net.blocks.1.adaLN_modulation.1.bias",
+        "net.blocks.1.adaLN_modulation.1.weight",
+        "net.blocks.1.attn.in_proj_bias",
+        "net.blocks.1.attn.in_proj_weight",
+        "net.blocks.1.attn.out_proj.bias",
+        "net.blocks.1.attn.out_proj.weight",
+        "net.blocks.1.mlp.0.bias",
+        "net.blocks.1.mlp.0.weight",
+        "net.blocks.1.mlp.3.bias",
+        "net.blocks.1.mlp.3.weight",
+        "net.blocks.1.norm1.bias",
+        "net.blocks.1.norm1.weight",
+        "net.blocks.1.norm2.bias",
+        "net.blocks.1.norm2.weight",
+        "net.blocks.10.adaLN_modulation.1.bias",
+        "net.blocks.10.adaLN_modulation.1.weight",
+        "net.blocks.10.attn.in_proj_bias",
+        "net.blocks.10.attn.in_proj_weight",
+        "net.blocks.10.attn.out_proj.bias",
+        "net.blocks.10.attn.out_proj.weight",
+        "net.blocks.10.mlp.0.bias",
+        "net.blocks.10.mlp.0.weight",
+        "net.blocks.10.mlp.3.bias",
+        "net.blocks.10.mlp.3.weight",
+        "net.blocks.10.norm1.bias",
+        "net.blocks.10.norm1.weight",
+        "net.blocks.10.norm2.bias",
+        "net.blocks.10.norm2.weight",
+        "net.blocks.11.adaLN_modulation.1.bias",
+        "net.blocks.11.adaLN_modulation.1.weight",
+        "net.blocks.11.attn.in_proj_bias",
+        "net.blocks.11.attn.in_proj_weight",
+        "net.blocks.11.attn.out_proj.bias",
+        "net.blocks.11.attn.out_proj.weight",
+        "net.blocks.11.mlp.0.bias",
+        "net.blocks.11.mlp.0.weight",
+        "net.blocks.11.mlp.3.bias",
+        "net.blocks.11.mlp.3.weight",
+        "net.blocks.11.norm1.bias",
+        "net.blocks.11.norm1.weight",
+        "net.blocks.11.norm2.bias",
+        "net.blocks.11.norm2.weight",
+        "net.blocks.2.adaLN_modulation.1.bias",
+        "net.blocks.2.adaLN_modulation.1.weight",
+        "net.blocks.2.attn.in_proj_bias",
+        "net.blocks.2.attn.in_proj_weight",
+        "net.blocks.2.attn.out_proj.bias",
+        "net.blocks.2.attn.out_proj.weight",
+        "net.blocks.2.mlp.0.bias",
+        "net.blocks.2.mlp.0.weight",
+        "net.blocks.2.mlp.3.bias",
+        "net.blocks.2.mlp.3.weight",
+        "net.blocks.2.norm1.bias",
+        "net.blocks.2.norm1.weight",
+        "net.blocks.2.norm2.bias",
+        "net.blocks.2.norm2.weight",
+        "net.blocks.3.adaLN_modulation.1.bias",
+        "net.blocks.3.adaLN_modulation.1.weight",
+        "net.blocks.3.attn.in_proj_bias",
+        "net.blocks.3.attn.in_proj_weight",
+        "net.blocks.3.attn.out_proj.bias",
+        "net.blocks.3.attn.out_proj.weight",
+        "net.blocks.3.mlp.0.bias",
+        "net.blocks.3.mlp.0.weight",
+        "net.blocks.3.mlp.3.bias",
+        "net.blocks.3.mlp.3.weight",
+        "net.blocks.3.norm1.bias",
+        "net.blocks.3.norm1.weight",
+        "net.blocks.3.norm2.bias",
+        "net.blocks.3.norm2.weight",
+        "net.blocks.4.adaLN_modulation.1.bias",
+        "net.blocks.4.adaLN_modulation.1.weight",
+        "net.blocks.4.attn.in_proj_bias",
+        "net.blocks.4.attn.in_proj_weight",
+        "net.blocks.4.attn.out_proj.bias",
+        "net.blocks.4.attn.out_proj.weight",
+        "net.blocks.4.mlp.0.bias",
+        "net.blocks.4.mlp.0.weight",
+        "net.blocks.4.mlp.3.bias",
+        "net.blocks.4.mlp.3.weight",
+        "net.blocks.4.norm1.bias",
+        "net.blocks.4.norm1.weight",
+        "net.blocks.4.norm2.bias",
+        "net.blocks.4.norm2.weight",
+        "net.blocks.5.adaLN_modulation.1.bias",
+        "net.blocks.5.adaLN_modulation.1.weight",
+        "net.blocks.5.attn.in_proj_bias",
+        "net.blocks.5.attn.in_proj_weight",
+        "net.blocks.5.attn.out_proj.bias",
+        "net.blocks.5.attn.out_proj.weight",
+        "net.blocks.5.mlp.0.bias",
+        "net.blocks.5.mlp.0.weight",
+        "net.blocks.5.mlp.3.bias",
+        "net.blocks.5.mlp.3.weight",
+        "net.blocks.5.norm1.bias",
+        "net.blocks.5.norm1.weight",
+        "net.blocks.5.norm2.bias",
+        "net.blocks.5.norm2.weight",
+        "net.blocks.6.adaLN_modulation.1.bias",
+        "net.blocks.6.adaLN_modulation.1.weight",
+        "net.blocks.6.attn.in_proj_bias",
+        "net.blocks.6.attn.in_proj_weight",
+        "net.blocks.6.attn.out_proj.bias",
+        "net.blocks.6.attn.out_proj.weight",
+        "net.blocks.6.mlp.0.bias",
+        "net.blocks.6.mlp.0.weight",
+        "net.blocks.6.mlp.3.bias",
+        "net.blocks.6.mlp.3.weight",
+        "net.blocks.6.norm1.bias",
+        "net.blocks.6.norm1.weight",
+        "net.blocks.6.norm2.bias",
+        "net.blocks.6.norm2.weight",
+        "net.blocks.7.adaLN_modulation.1.bias",
+        "net.blocks.7.adaLN_modulation.1.weight",
+        "net.blocks.7.attn.in_proj_bias",
+        "net.blocks.7.attn.in_proj_weight",
+        "net.blocks.7.attn.out_proj.bias",
+        "net.blocks.7.attn.out_proj.weight",
+        "net.blocks.7.mlp.0.bias",
+        "net.blocks.7.mlp.0.weight",
+        "net.blocks.7.mlp.3.bias",
+        "net.blocks.7.mlp.3.weight",
+        "net.blocks.7.norm1.bias",
+        "net.blocks.7.norm1.weight",
+        "net.blocks.7.norm2.bias",
+        "net.blocks.7.norm2.weight",
+        "net.blocks.8.adaLN_modulation.1.bias",
+        "net.blocks.8.adaLN_modulation.1.weight",
+        "net.blocks.8.attn.in_proj_bias",
+        "net.blocks.8.attn.in_proj_weight",
+        "net.blocks.8.attn.out_proj.bias",
+        "net.blocks.8.attn.out_proj.weight",
+        "net.blocks.8.mlp.0.bias",
+        "net.blocks.8.mlp.0.weight",
+        "net.blocks.8.mlp.3.bias",
+        "net.blocks.8.mlp.3.weight",
+        "net.blocks.8.norm1.bias",
+        "net.blocks.8.norm1.weight",
+        "net.blocks.8.norm2.bias",
+        "net.blocks.8.norm2.weight",
+        "net.blocks.9.adaLN_modulation.1.bias",
+        "net.blocks.9.adaLN_modulation.1.weight",
+        "net.blocks.9.attn.in_proj_bias",
+        "net.blocks.9.attn.in_proj_weight",
+        "net.blocks.9.attn.out_proj.bias",
+        "net.blocks.9.attn.out_proj.weight",
+        "net.blocks.9.mlp.0.bias",
+        "net.blocks.9.mlp.0.weight",
+        "net.blocks.9.mlp.3.bias",
+        "net.blocks.9.mlp.3.weight",
+        "net.blocks.9.norm1.bias",
+        "net.blocks.9.norm1.weight",
+        "net.blocks.9.norm2.bias",
+        "net.blocks.9.norm2.weight",
+        "net.final_layer.modulation.1.bias",
+        "net.final_layer.modulation.1.weight",
+        "net.final_layer.norm.bias",
+        "net.final_layer.norm.weight",
+        "net.final_layer.proj.bias",
+        "net.final_layer.proj.weight",
+        "net.patch_embed.bias",
+        "net.patch_embed.weight",
+        "net.pos_embed",
+        "net.t_embedder.mlp.0.bias",
+        "net.t_embedder.mlp.0.weight",
+        "net.t_embedder.mlp.2.bias",
+        "net.t_embedder.mlp.2.weight",
+        "net.y_embedder.embedding_table.weight"
+      ],
+      "sha256": "995935d6bec29266cc2cc24e33cbfc83be911c1a0fbc44952dddd28212d84886"
+    }
+  },
+  "state_and_ema_unchanged": true,
+  "engineering_probe_elapsed_s": 3.5211943030008115,
+  "scope": "Only K1 equivalence probes. No candidate screen generation or clean-generation timing.",
+  "candidate_generation_authorized": false
+}

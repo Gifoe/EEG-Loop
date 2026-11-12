@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "fixtures": [
+    {
+      "domain": "synthetic",
+      "rows": 3,
+      "all_row_hashes_verified": true,
+      "tamper_cases_rejected": 5
+    },
+    {
+      "domain": "private",
+      "rows": 3,
+      "all_row_hashes_verified": true,
+      "tamper_cases_rejected": 5
+    }
+  ],
+  "phase_budget_checks": true
+}

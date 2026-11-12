@@ -1,0 +1,107 @@
+{
+  "storage_amendment_sha256": "07d739c0e910dbdec8e10d12ca038d712ec7fd05419307f1db936736c76fdf5a",
+  "variant": "jet-paper-aligned-v1",
+  "protocol_sha256": "a05b1ac74bfa490ff5cd822e430bcfe2582983d585d34a72ee46df31089d3ed3",
+  "source_sha256": {
+    "evaluate_aligned.py": "0f57ecf48a5d80bf0ea3a597f06dc49110c6d54a8be9e4dc86e8e66b57996d05",
+    "synthetic_checks.py": "71839e77ad23cdf111f6ac1688823a782279bb72c52438227369b061b9f119c9",
+    "resume_environment.sh": "1db8dda8edf531b0a9f25a941a71a31c408d2490e673d7c845149974b377ac89",
+    "install_environment.sh": "fba1cf94bb4b037ab396dfb6c1cbbbffba5e479469450e7ca4702d4239a2fc1b",
+    "run_support.py": "f1f3046b9f810ed8152288ff7ae4830e3e5131b47ec895151f06a46553dbee97",
+    "run_environment_checks.sh": "9258567fc51e06145c68814eba5a91d038326291c172362efd3546c7859c0ca4",
+    "model.py": "9423a238d6c8432bca82a944afabb7fe966eedbf4652bcce6c61054117379889",
+    "freeze_materializer.py": "f05c9ae7043d88b99bccd8dc01b1fa87302398d64a3c75b507c2884dfc4a0104",
+    "train_aligned.py": "d49714b9aebf01529e10656cde8ae187b41b1bfde145beedfb373f684bd4aa7b",
+    "queue_rescore_after_r1.sh": "51dd73bf18369a74747efbf02e41e63e5d95c0d4ada4f3b52f9506862b5085c5",
+    "freeze_inputs.py": "616905b842c6c50e492cd433c8bd4213b4ba95a669cbc1e9d7e1ec10f80cddb4",
+    "reference_sidecar.py": "cdd7ebb3966dad6b6cffe1305089bc9573e3dcaf7cf34caab03ef3564f856d81",
+    "metric.py": "875024a3a8eda1d70f723dbb0d427ce938cce97e5a7e066289073ce753b8285f",
+    "materialize_view.py": "ec3a9db5feb62e16fb415cfec8973a062bbc7aa01a4b663a23e2a5fec949e987",
+    "data_view.py": "876b0dfdf42b633375303670c64abdd629f0df9f941dc9cd1af24260250b373c",
+    "cuda_smoke.py": "66e64abdaea6fec495158dc3add361076380ea45272cd18f78e6697f2c980b0a",
+    "rescore_own.py": "c3c5c4c54b7dbd6a7e189ea5a8e79ba39c3d9780b28fbd23079dbeef1d6a1237",
+    "requirements-py310.txt": "69fff50e10c69b3068ad6446d3385ba41978f3836edd414b315430011049ddea",
+    "verify_environment.py": "fc4b053a2a56fce2aa88d5623620ae0c8c7dc5ad033b67688867dbb535eac066",
+    "test_storage_amendment.py": "3c13374b27603a7a93c4a85d7cf93076016a4dd59cf6860cb3f9babcea423aef",
+    "storage_budget.py": "88505fb75b9acad4b3b0f254842ef57b03402f2e27ed36a08cbad81348a0bac3"
+  },
+  "environment_sha256": {
+    "pip-freeze.txt": "03e1d9c6d0f5978a7ead30f291cef164a9784d29f9bbe66f41583203f5b0caad",
+    "wheel-lock.json": "9532874ab18dbf7cda6a4ae8428b5ceebeeccb817f4a19f1e5f5765a9b7865e7",
+    "conda-explicit-lock.txt": "5275bcc29c6a636f4f8991bec8d533effe2f060ece3d8b2afa430b5db70664ae",
+    "import-check.json": "a14ed53f53b2a063311cbfc492642ada40286d11a521b314feeaa36619d2557b"
+  },
+  "synthetic_report_sha256": "a182212e3e304eaa74d4f024c698255cd0d1c3a76cc89d1c13fbf3de85758850",
+  "smoke_report_sha256": "71b97dc1beeaa9febc43f1c9e010b4ee44e2547b5f5c2dec8c033110bd1373c6",
+  "data_manifest_sha256": "2159c79f3295f6deb0546caf143b12733b310fced081e871be2d1f99b08f12df",
+  "data_mapping_sha256": "22e33001c29a4842f8806a51a36581e37fe55fff6f735115de41ffcb8907db6a",
+  "data_dir": "/home/luansiyu/EEG-Loop/tuev-paper-aligned-v1-f32",
+  "output_dir": "/home/luansiyu/EEG-Loop/paper-aligned-v1-seed0",
+  "seed": 0,
+  "epochs": 200,
+  "batch_size": 256,
+  "lr": 5e-05,
+  "warmup_epochs": 5,
+  "lr_schedule": "constant",
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0,
+  "ema_decays": [
+    0.9999,
+    0.9996
+  ],
+  "label_drop": 0.1,
+  "weighted_sampler": true,
+  "drop_last": true,
+  "num_workers": 4,
+  "dtype_training": "bfloat16",
+  "dtype_inference": "float32",
+  "backend": {
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "cudnn_benchmark": true,
+    "cudnn_deterministic": false
+  },
+  "parameter_count": 129922760,
+  "checkpoint_retention": {
+    "full_snapshots": [
+      0,
+      100,
+      199
+    ],
+    "last_save_every_epochs": 1,
+    "atomic_last": true,
+    "final_snapshot_is_hardlink_to_last": true
+  },
+  "storage": {
+    "free_bytes": 20809740288,
+    "checkpoint_upper_each": 2650000000,
+    "checkpoint_peak_copies": 4,
+    "archive_schema": "jet-generated-only-v1",
+    "evaluation_checkpoint_copies": 3,
+    "archives_upper_bytes": 6408692480,
+    "safety_bytes": 5368709120,
+    "required_bytes": 15968709120
+  },
+  "initialization": "Fresh own seed0; no checkpoint warmstart",
+  "primary_evaluation": {
+    "split": "test",
+    "rows": 29421,
+    "seed": 0,
+    "batch_size": 64,
+    "ema": "ema1",
+    "heun_steps": 50,
+    "nfe": 99,
+    "cfg": 1
+  },
+  "secondary_evaluation": {
+    "split": "train",
+    "rows": 68445
+  },
+  "metrics": [
+    "tsfid-source-1000",
+    "tsfid-paper-v1-1024"
+  ]
+}

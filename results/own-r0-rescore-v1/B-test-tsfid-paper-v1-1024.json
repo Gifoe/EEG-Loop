@@ -1,0 +1,64 @@
+{
+  "metric_id": "tsfid-paper-v1-1024",
+  "dimensions": 1024,
+  "checks": {
+    "overall": {
+      "rows_per_collection": 29421,
+      "score": 457.86343002666825,
+      "symmetric_audit": 457.8634300266684,
+      "difference": 1.7053025658242404e-13,
+      "absolute_tolerance": 0.005578634300266683,
+      "passed": true
+    },
+    "0": {
+      "rows_per_collection": 567,
+      "score": 336.5844658602234,
+      "symmetric_audit": 336.584482188689,
+      "difference": 1.6328465562764904e-05,
+      "absolute_tolerance": 0.004365844658602234,
+      "passed": true
+    },
+    "1": {
+      "rows_per_collection": 4677,
+      "score": 537.6780783550121,
+      "symmetric_audit": 537.6780796011193,
+      "difference": 1.246107217411918e-06,
+      "absolute_tolerance": 0.006376780783550121,
+      "passed": true
+    },
+    "2": {
+      "rows_per_collection": 1998,
+      "score": 289.41765788262273,
+      "symmetric_audit": 289.4176597148528,
+      "difference": 1.8322300547879422e-06,
+      "absolute_tolerance": 0.0038941765788262275,
+      "passed": true
+    },
+    "3": {
+      "rows_per_collection": 329,
+      "score": 368.0931371871069,
+      "symmetric_audit": 368.0931513298651,
+      "difference": 1.4142758232082997e-05,
+      "absolute_tolerance": 0.00468093137187107,
+      "passed": true
+    },
+    "4": {
+      "rows_per_collection": 2204,
+      "score": 945.6708502285765,
+      "symmetric_audit": 945.6708756278742,
+      "difference": 2.539929778322403e-05,
+      "absolute_tolerance": 0.010456708502285764,
+      "passed": true
+    },
+    "5": {
+      "rows_per_collection": 19646,
+      "score": 456.2257889277959,
+      "symmetric_audit": 456.2257889512284,
+      "difference": 2.3432505713572027e-08,
+      "absolute_tolerance": 0.00556225788927796,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "independent_covariance": "Centered Chan accumulation versus raw sums; symmetric eigensquare root versus source sqrtm"
+}
